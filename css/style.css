@@ -112,6 +112,7 @@ body {
     color: white;
     text-shadow: 1px 1px 1px black;
     text-decoration: none;
+    transition: all .3s;
 }
 
 .header .nav .nav-link:hover {
@@ -263,6 +264,7 @@ body {
 .footer .footer-link {
     color: white;
     text-decoration: none;
+    transition: all .3s;
 }
 
 .footer .footer-link:hover {
@@ -293,6 +295,7 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    transition: all .3s;
 }
 
 .footer .footer-link:hover .instagram {
@@ -308,6 +311,7 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    transition: all .3s;
 }
 
 .footer .footer-link:hover .twitter {
@@ -329,11 +333,11 @@ body {
     align-items: center;
     text-shadow: 1px 1px 1px var(--dark-main-color);
     text-decoration: none;
+    transition: all .3s;
 }
 
 .button:hover {
     background-color: var(--medium-main-color);
-    border: 1px solid var(--main-color);
 }
 
 .button h4 {
