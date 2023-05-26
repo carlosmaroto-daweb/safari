@@ -1,0 +1,233 @@
+@font-face {
+    font-family: "Montserrat Alternates";
+    src: url('../fonts/MontserratAlternates/MontserratAlternates-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Montserrat Alternates";
+    src: url('../fonts/MontserratAlternates/MontserratAlternates-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Geograph";
+    src: url('../fonts/Geograph/Geograph-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Geograph";
+    src: url('../fonts/Geograph/Geograph-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url('../fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url('../fonts/Poppins/Poppins-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url('../fonts/Poppins/Poppins-ExtraLightItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 200;
+}
+
+html {
+    --main-color: #fcb941;
+    --medium-main-color: #b48132;
+    --dark-main-color: #6b4922;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/********************************** HERO COMMON **********************************/
+
+.header {
+    padding: 11.25px 56.25px;               /* %75 -> Ilustrator 15px 75px */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header .logo img {
+    height: 67.5px;                         /* %75 -> Ilustrator 90px */
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+.header .logo h2 {
+    margin: 0;
+    margin-left: 26.25px;                  /* %75 -> Ilustrator 35px */
+    font-family: 'Montserrat Alternates';
+    font-size: 36px;                        /* %75 -> Ilustrator 48px */
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.header .logo h2 span {
+    color: var(--main-color);
+}
+
+.header .nav {
+    display: inline-flex;
+    align-items: center;
+}
+
+.header .nav .nav-link {
+    margin-left: 48.75px;                   /* %75 -> Ilustrator 65px */
+    font-family: 'Montserrat Alternates';
+    text-transform: uppercase;
+    font-size: 23.25px;                     /* %75 -> Ilustrator 31px */
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: none;
+}
+
+.header .nav .nav-link:hover {
+    color: var(--main-color);
+}
+
+.header .nav .active {
+    border-bottom: 3px solid var(--main-color);
+}
+
+/********************************** HERO INDEX **********************************/
+
+.hero-index {
+    height: 100vh;
+    background-image: url(../img/background-home.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.hero-index .text h1 {
+    margin: 0;
+    position: absolute;
+    left: 56.25px; /* <- Ilustrator %75 - 75px */
+    bottom: 191.25px; /* <- Ilustrator %75 - 255px */
+    font-family: 'Geograph';
+    text-transform: uppercase;
+    font-size: 57px; /* <- Ilustrator %75 - 76px */
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.hero-index .button {
+    position: absolute;
+    left: 56.25px;                          /* %75 -> Ilustrator 75px */
+    bottom: 86.25px;                        /* %75 -> Ilustrator 115px */
+}
+
+/********************************** HERO ROUTES **********************************/
+
+.hero-routes {
+    height: 50vh;
+    background-image: url(../img/background-routes.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/********************************** HERO CONSERVATION **********************************/
+
+.hero-conservation {
+    height: 50vh;
+    background-image: url(../img/background-conservation.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/********************************** HERO CONTACT **********************************/
+
+.hero-contact {
+    height: 50vh;
+    background-image: url(../img/background-contact.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/********************************** ABOUT **********************************/
+
+.about {
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+/********************************** ELEMENTS **********************************/
+
+/**************** BUTTON ****************/
+
+.button {
+    height: 63.75px;                        /* %75 -> Ilustrator 85px */
+    background-color: var(--main-color);
+    display: inline-flex;
+    align-items: center;
+    text-shadow: 1px 1px 1px var(--dark-main-color);
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: var(--medium-main-color);
+    border: 1px solid var(--main-color);
+}
+
+.button h2 {
+    margin: 0;
+    margin-left: 37.5px;                    /* %75 -> Ilustrator 50px */
+    font-family: 'Geograph';
+    text-transform: uppercase;
+    font-size: 22.5px;                      /* %75 -> Ilustrator 30px */
+    color: white;
+    text-shadow: 1px 1px 1px var(--dark-main-color);
+}
+
+.button .circle-arrow-right {
+    margin-left: 11.25px;                   /* %75 -> Ilustrator 15px */
+    margin-right: 37.5px;                   /* %75 -> Ilustrator 50px */
+    width: 24px;                            /* %75 -> Ilustrator 32px */
+    height: 24px;                           /* %75 -> Ilustrator 32px */
+    filter: invert(100%) sepia(17%) saturate(24%) hue-rotate(357deg) brightness(105%) contrast(106%) drop-shadow(1px 1px 1px var(--dark-main-color));
+    background-image: url(../img/circle-arrow-right.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
