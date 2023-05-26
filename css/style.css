@@ -324,7 +324,7 @@ body {
 
 /********************************** LINK PANELS **********************************/
 
-.link-panels .link-panel-1{
+.link-panels .link-panel-1 {
     height: 33vh;
     background-image: url(../img/link-panel-1.jpg);
     background-size: cover;
@@ -332,7 +332,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.link-panels .link-panel-2{
+.link-panels .link-panel-2 {
     height: 33vh;
     background-image: url(../img/link-panel-2.jpg);
     background-size: cover;
@@ -340,7 +340,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.link-panels .link-panel-3{
+.link-panels .link-panel-3 {
     height: 33vh;
     background-image: url(../img/link-panel-3.jpg);
     background-size: cover;
@@ -348,10 +348,32 @@ body {
     background-repeat: no-repeat;
 }
 
+.link-panels .body-panel-1, .link-panels .body-panel-2, .link-panels .body-panel-3 {
+    width: 50%;
+    height: 33vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-panels .body-panel-2 {
+    margin-left: 50%;
+}
+
+.link-panels h2 {
+    margin: 0;
+    margin-bottom: 11.25px;                 /* %75 -> Ilustrator 15px */
+    font-family: 'Montserrat Alternates';
+    font-size: 45px;                        /* %75 -> Ilustrator 60px */
+    color: white;
+    text-align: center;
+}
+
 /********************************** FOOTER **********************************/
 
 .footer {
-    padding: 71.25px 0px;               /* %75 -> Ilustrator 95px */
+    padding: 71.25px 0px;                   /* %75 -> Ilustrator 95px */
     background-color: var(--dark-gray-color);
     display: flex;
     align-items: center;
@@ -473,7 +495,7 @@ body {
     filter: invert(70%) sepia(50%) saturate(560%) hue-rotate(355deg) brightness(100%) contrast(98%);
 }
 
-.footer .mt-41{
+.footer .mt-41 {
     margin-top: 41.25px;                    /* %75 -> Ilustrator 55px */
 }
 
