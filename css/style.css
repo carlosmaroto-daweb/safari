@@ -188,11 +188,66 @@ body {
 }
 
 .about-1 {
+    padding: 90px 127.5px;               /* %75 -> Ilustrator 120px 170px */
     width: 50%;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
+.about-1 .title {
+    padding-bottom: 11.25px;                /* %75 -> Ilustrator 15px */
+    border-bottom: 3px solid var(--main-color);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.about-1 .title h2 {
+    margin: 0;
+    font-family: 'Montserrat Alternates';
+    font-size: 45px;                        /* %75 -> Ilustrator 60px */
+    color: black;
+}
+
+.about-1 p {
+    margin: 0;
+    max-width: 465px;                       /* %75 -> Ilustrator 620px */
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins';
+    font-size: 18.75px;                     /* %75 -> Ilustrator 25px */
+    color: black;
+    text-align: justify;
+}
+
+.about-1 .logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-1 .logo-1 {
+    display: inline-flex;
+    align-items: center;
+}
+
+.about-1 .logo-1 img {
+    height: 86.25px;                        /* %75 -> Ilustrator 115px */
+}
+
+.about-1 .logo-1 h3 {
+    margin: 0;
+    margin-left: 11.25px;                   /* %75 -> Ilustrator 15px */
+    font-family: 'Montserrat Alternates';
+    font-size: 36px;                        /* %75 -> Ilustrator 48px */
+    color: var(--main-color);
+    text-shadow: 1px 1px 1px black;
+}
+
+.about-1 .logo-2 img {
+    height: 86.25px;                        /* %75 -> Ilustrator 115px */
+}
 
 .about-2 {
     width: 50%;
@@ -338,6 +393,7 @@ body {
     margin: 0px;
     margin-top: 18.75px;                    /* %75 -> Ilustrator 25px */
     max-width: 266.25px;                    /* %75 -> Ilustrator 355px */
+    text-align: justify;
 }
 
 .footer .footer-link {
