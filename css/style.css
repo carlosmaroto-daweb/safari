@@ -87,7 +87,7 @@ body {
 
 .header .logo h2 {
     margin: 0;
-    margin-left: 26.25px;                  /* %75 -> Ilustrator 35px */
+    margin-left: 26.25px;                   /* %75 -> Ilustrator 35px */
     font-family: 'Montserrat Alternates';
     font-size: 36px;                        /* %75 -> Ilustrator 48px */
     color: white;
@@ -134,11 +134,11 @@ body {
 .hero-index .text h1 {
     margin: 0;
     position: absolute;
-    left: 56.25px; /* <- Ilustrator %75 - 75px */
-    bottom: 191.25px; /* <- Ilustrator %75 - 255px */
+    left: 56.25px;                          /* <- Ilustrator %75 - 75px */
+    bottom: 191.25px;                       /* <- Ilustrator %75 - 255px */
     font-family: 'Geograph';
     text-transform: uppercase;
-    font-size: 57px; /* <- Ilustrator %75 - 76px */
+    font-size: 57px;                        /* <- Ilustrator %75 - 76px */
     color: white;
     text-shadow: 1px 1px 1px black;
 }
