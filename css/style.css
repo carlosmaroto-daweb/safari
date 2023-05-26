@@ -188,7 +188,7 @@ body {
 }
 
 .about-1 {
-    padding: 90px 127.5px;               /* %75 -> Ilustrator 120px 170px */
+    padding: 90px 0px;                      /* %75 -> Ilustrator 120px */
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -322,11 +322,31 @@ body {
     background-repeat: no-repeat;
 }
 
+/********************************** LINK PANELS **********************************/
 
+.link-panels .link-panel-1{
+    height: 33vh;
+    background-image: url(../img/link-panel-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
+.link-panels .link-panel-2{
+    height: 33vh;
+    background-image: url(../img/link-panel-2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
-
-
+.link-panels .link-panel-3{
+    height: 33vh;
+    background-image: url(../img/link-panel-3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
 /********************************** FOOTER **********************************/
 
