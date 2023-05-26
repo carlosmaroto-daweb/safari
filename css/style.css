@@ -58,6 +58,7 @@ html {
     --main-color: #fcb941;
     --medium-main-color: #b48132;
     --dark-main-color: #6b4922;
+    --dark-gray-color: #333333;
 }
 
 body {
@@ -85,7 +86,7 @@ body {
     filter: drop-shadow(1px 1px 1px black);
 }
 
-.header .logo h2 {
+.header .logo h3 {
     margin: 0;
     margin-left: 26.25px;                   /* %75 -> Ilustrator 35px */
     font-family: 'Montserrat Alternates';
@@ -94,7 +95,7 @@ body {
     text-shadow: 1px 1px 1px black;
 }
 
-.header .logo h2 span {
+.header .logo h3 span {
     color: var(--main-color);
 }
 
@@ -192,6 +193,131 @@ body {
 
 
 
+/********************************** FOOTER **********************************/
+
+.footer {
+    padding: 71.25px 127.5px;               /* %75 -> Ilustrator 95px 170px */
+    background-color: var(--dark-gray-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .col-1 {
+    text-align: center;
+}
+
+.footer .logo {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer .logo img {
+    height: 86.25px;                        /* %75 -> Ilustrator 115px */
+}
+
+.footer .logo h3 {
+    margin: 0;
+    margin-left: 11.25px;                   /* %75 -> Ilustrator 15px */
+    font-family: 'Montserrat Alternates';
+    font-size: 36px;                        /* %75 -> Ilustrator 48px */
+    color: var(--main-color);
+    text-shadow: 1px 1px 1px black;
+}
+
+.footer .copyright {
+    margin-top: 48.75px;                    /* %75 -> Ilustrator 65px */
+    font-family: 'Geograph';
+    font-size: 16.5px;                      /* %75 -> Ilustrator 22px */
+    color: white;
+}
+
+.footer .col-2, .footer .col-3, .footer .col-4 {
+    font-family: 'Geograph';
+    font-size: 18.75px;                     /* %75 -> Ilustrator 25px */
+    color: white;
+}
+
+.footer .title {
+    font-weight: 700;
+}
+
+.footer ul {
+    margin: 0px;
+    margin-top: 22.5px;                     /* %75 -> Ilustrator 30px */
+    padding-inline-start: 20px;
+}
+
+.footer ul li {
+    margin: 0px;
+    margin-top: 18.75px;                    /* %75 -> Ilustrator 25px */
+}
+
+.footer p {
+    margin: 0px;
+    margin-top: 18.75px;                    /* %75 -> Ilustrator 25px */
+    max-width: 266.25px;                    /* %75 -> Ilustrator 355px */
+}
+
+.footer .footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .footer-link:hover {
+    color: var(--main-color);
+}
+
+.footer .mt-18{
+    margin-top: 18.75px;                    /* %75 -> Ilustrator 25px */
+}
+
+.footer .follow {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .social-networks {
+    margin-top: 18.75px;                    /* %75 -> Ilustrator 25px */
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer .instagram {
+    margin-right: 11.25px;                  /* %75 -> Ilustrator 15px */
+    width: 26.25px;                         /* %75 -> Ilustrator 35px */
+    height: 26.25px;                        /* %75 -> Ilustrator 35px */
+    filter: invert(100%) sepia(17%) saturate(24%) hue-rotate(357deg) brightness(105%) contrast(106%);
+    background-image: url(../img/instagram.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.footer .footer-link:hover .instagram {
+    filter: invert(70%) sepia(50%) saturate(560%) hue-rotate(355deg) brightness(100%) contrast(98%);
+}
+
+.footer .twitter {
+    margin-right: 11.25px;                  /* %75 -> Ilustrator 15px */
+    width: 26.25px;                         /* %75 -> Ilustrator 35px */
+    height: 26.25px;                        /* %75 -> Ilustrator 35px */
+    filter: invert(100%) sepia(17%) saturate(24%) hue-rotate(357deg) brightness(105%) contrast(106%) drop-shadow(1px 1px 1px var(--dark-main-color));
+    background-image: url(../img/twitter.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.footer .footer-link:hover .twitter {
+    filter: invert(70%) sepia(50%) saturate(560%) hue-rotate(355deg) brightness(100%) contrast(98%);
+}
+
+.footer .mt-41{
+    margin-top: 41.25px;                    /* %75 -> Ilustrator 55px */
+}
+
 /********************************** ELEMENTS **********************************/
 
 /**************** BUTTON ****************/
@@ -210,7 +336,7 @@ body {
     border: 1px solid var(--main-color);
 }
 
-.button h2 {
+.button h4 {
     margin: 0;
     margin-left: 37.5px;                    /* %75 -> Ilustrator 50px */
     font-family: 'Geograph';
