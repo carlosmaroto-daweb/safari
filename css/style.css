@@ -184,9 +184,88 @@ body {
 /********************************** ABOUT **********************************/
 
 .about {
+    display: flex;
+}
+
+.about-1 {
+    width: 50%;
     height: 100vh;
 }
 
+
+
+.about-2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-2 .upper-half {
+    display: inline-flex;
+}
+
+.about-2 .lion {
+    width: 37.90%;
+    height: 50vh;
+    background-image: url(../img/about-us-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.about-2 .col {
+    width: 62.10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-2 .row {
+    display: inline-flex;
+}
+
+.about-2 .rhino {
+    width: 42.07%;
+    height: 25vh;
+    background-image: url(../img/about-us-2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.about-2 .leopard {
+    width: 57.93%;
+    height: 25vh;
+    background-image: url(../img/about-us-3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.about-2 .buffalo {
+    width: 36.06%;
+    height: 25vh;
+    background-image: url(../img/about-us-4.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.about-2 .elephant {
+    width: 63.94%;
+    height: 25vh;
+    background-image: url(../img/about-us-5.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.about-2 .game-drive {
+    height: 50vh;
+    background-image: url(../img/about-us-6.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
 
 
@@ -197,11 +276,11 @@ body {
 /********************************** FOOTER **********************************/
 
 .footer {
-    padding: 71.25px 127.5px;               /* %75 -> Ilustrator 95px 170px */
+    padding: 71.25px 0px;               /* %75 -> Ilustrator 95px */
     background-color: var(--dark-gray-color);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .footer .col-1 {
