@@ -370,6 +370,102 @@ body {
     text-align: center;
 }
 
+/********************************** SERVICES **********************************/
+
+.services {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.services .title {
+    padding-bottom: 11.25px;                /* %75 -> Ilustrator 15px */
+    border-bottom: 3px solid var(--main-color);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services .title h2 {
+    margin: 0;
+    font-family: 'Montserrat Alternates';
+    font-size: 45px;                        /* %75 -> Ilustrator 60px */
+    color: black;
+}
+
+.services p {
+    margin: 0;
+    max-width: 720px;                       /* %75 -> Ilustrator 960px */
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins';
+    font-size: 18.75px;                     /* %75 -> Ilustrator 25px */
+    color: black;
+    text-align: justify;
+}
+
+.services .tarjets {
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.services .tarjet {
+    width: 307.5px;                         /* %75 -> Ilustrator 410px */
+    height: 408.75px;                       /* %75 -> Ilustrator 545px */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.services .sub-title {
+    margin: 0;
+    font-family: 'Montserrat Alternates';
+    font-size: 20.25px;                     /* %75 -> Ilustrator 27px */
+    color: black;
+    border-bottom: 3px solid var(--main-color);
+}
+
+.services .tarjets p {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 240px;                       /* %75 -> Ilustrator 320px */
+    font-weight: 300;
+}
+
+.services .houses, .services .binoculars, .services .people, .services .cup-hot {
+    filter: invert(84%) sepia(15%) saturate(2096%) hue-rotate(335deg) brightness(98%) contrast(101%);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.services .houses {
+    width: 60px;                            /* %75 -> Ilustrator 80px */
+    height: 60px;                           /* %75 -> Ilustrator 80px */
+    background-image: url(../img/houses.svg);
+}
+
+.services .binoculars {
+    width: 60px;                            /* %75 -> Ilustrator 80px */
+    height: 60px;                           /* %75 -> Ilustrator 80px */
+    background-image: url(../img/binoculars.svg);
+}
+
+.services .people {
+    width: 70px;                            /* %75 -> Ilustrator 80px */
+    height: 60px;                           /* %75 -> Ilustrator 80px */
+    background-image: url(../img/people.svg);
+}
+
+.services .cup-hot {
+    width: 60px;                            /* %75 -> Ilustrator 80px */
+    height: 60px;                           /* %75 -> Ilustrator 80px */
+    background-image: url(../img/cup-hot.svg);
+}
+
 /********************************** FOOTER **********************************/
 
 .footer {
@@ -483,7 +579,7 @@ body {
     margin-right: 11.25px;                  /* %75 -> Ilustrator 15px */
     width: 26.25px;                         /* %75 -> Ilustrator 35px */
     height: 26.25px;                        /* %75 -> Ilustrator 35px */
-    filter: invert(100%) sepia(17%) saturate(24%) hue-rotate(357deg) brightness(105%) contrast(106%) drop-shadow(1px 1px 1px var(--dark-main-color));
+    filter: invert(100%) sepia(17%) saturate(24%) hue-rotate(357deg) brightness(105%) contrast(106%);
     background-image: url(../img/twitter.svg);
     background-size: cover;
     background-position: center center;
