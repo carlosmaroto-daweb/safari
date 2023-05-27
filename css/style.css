@@ -491,6 +491,76 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    position: relative;
+}
+
+.facilities .background-facilities .panel {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    width: 336px;
+    height: 219.1px;
+    background-color: var(--dark-gray-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.facilities .panel .panel-button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.facilities .panel .row {
+    display: inline-flex;
+    justify-content: space-evenly;
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: white;
+}
+
+.facilities .panel .col {
+    display: flex;
+    flex-direction: column;
+}
+
+.facilities .panel .item {
+    margin: 5px 0px;
+    display: inline-flex;
+}
+
+.facilities .people, .facilities .door-closed, .facilities .router, .facilities .car-front, .facilities .signpost-split, .facilities .geo-alt {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    filter: invert(100%) sepia(17%) saturate(24%) hue-rotate(357deg) brightness(105%) contrast(106%);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.facilities .people {
+    background-image: url(../img/people.svg);
+}
+
+.facilities .door-closed {
+    background-image: url(../img/door-closed.svg);
+}
+
+.facilities .router {
+    background-image: url(../img/router.svg);
+}
+
+.facilities .car-front {
+    background-image: url(../img/car-front.svg);
+}
+
+.facilities .signpost-split {
+    background-image: url(../img/signpost-split.svg);
+}
+
+.facilities .geo-alt {
+    background-image: url(../img/geo-alt.svg);
 }
 
 .facilities .panel-footer {
