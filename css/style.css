@@ -69,7 +69,7 @@ body {
 /********************************** HERO COMMON **********************************/
 
 .header {
-    padding: 11.25px 56.25px;               /* %75 -> Ilustrator 15px 75px */
+    padding: 11.25px 56.25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -82,15 +82,15 @@ body {
 }
 
 .header .logo img {
-    height: 67.5px;                         /* %75 -> Ilustrator 90px */
+    height: 67.5px;
     filter: drop-shadow(1px 1px 1px black);
 }
 
 .header .logo h3 {
     margin: 0;
-    margin-left: 26.25px;                   /* %75 -> Ilustrator 35px */
+    margin-left: 26.25px;
     font-family: 'Montserrat Alternates';
-    font-size: 36px;                        /* %75 -> Ilustrator 48px */
+    font-size: 36px;
     color: white;
     text-shadow: 1px 1px 1px black;
 }
@@ -105,10 +105,10 @@ body {
 }
 
 .header .nav .nav-link {
-    margin-left: 48.75px;                   /* %75 -> Ilustrator 65px */
+    margin-left: 48.75px;
     font-family: 'Montserrat Alternates';
     text-transform: uppercase;
-    font-size: 23.25px;                     /* %75 -> Ilustrator 31px */
+    font-size: 23.25px;
     color: white;
     text-shadow: 1px 1px 1px black;
     text-decoration: none;
@@ -136,19 +136,19 @@ body {
 .hero-index .text h1 {
     margin: 0;
     position: absolute;
-    left: 56.25px;                          /* <- Ilustrator %75 - 75px */
-    bottom: 191.25px;                       /* <- Ilustrator %75 - 255px */
+    left: 56.25px;
+    bottom: 191.25px;
     font-family: 'Geograph';
     text-transform: uppercase;
-    font-size: 57px;                        /* <- Ilustrator %75 - 76px */
+    font-size: 57px;
     color: white;
     text-shadow: 1px 1px 1px black;
 }
 
 .hero-index .button {
     position: absolute;
-    left: 56.25px;                          /* %75 -> Ilustrator 75px */
-    bottom: 86.25px;                        /* %75 -> Ilustrator 115px */
+    left: 56.25px;
+    bottom: 86.25px;
 }
 
 /********************************** HERO ROUTES **********************************/
@@ -188,7 +188,7 @@ body {
 }
 
 .about-1 {
-    padding: 90px 0px;                      /* %75 -> Ilustrator 120px */
+    padding: 90px 0px;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -196,7 +196,7 @@ body {
 }
 
 .about-1 .title {
-    padding-bottom: 11.25px;                /* %75 -> Ilustrator 15px */
+    padding-bottom: 11.25px;
     border-bottom: 3px solid var(--main-color);
     width: fit-content;
     margin-left: auto;
@@ -206,17 +206,17 @@ body {
 .about-1 .title h2 {
     margin: 0;
     font-family: 'Montserrat Alternates';
-    font-size: 45px;                        /* %75 -> Ilustrator 60px */
+    font-size: 45px;
     color: black;
 }
 
 .about-1 p {
     margin: 0;
-    max-width: 465px;                       /* %75 -> Ilustrator 620px */
+    max-width: 465px;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Poppins';
-    font-size: 18.75px;                     /* %75 -> Ilustrator 25px */
+    font-size: 18.75px;
     color: black;
     text-align: justify;
 }
@@ -233,20 +233,20 @@ body {
 }
 
 .about-1 .logo-1 img {
-    height: 86.25px;                        /* %75 -> Ilustrator 115px */
+    height: 86.25px;
 }
 
 .about-1 .logo-1 h3 {
     margin: 0;
-    margin-left: 11.25px;                   /* %75 -> Ilustrator 15px */
+    margin-left: 11.25px;
     font-family: 'Montserrat Alternates';
-    font-size: 36px;                        /* %75 -> Ilustrator 48px */
+    font-size: 36px;
     color: var(--main-color);
     text-shadow: 1px 1px 1px black;
 }
 
 .about-1 .logo-2 img {
-    height: 86.25px;                        /* %75 -> Ilustrator 115px */
+    height: 86.25px;
 }
 
 .about-2 {
@@ -363,9 +363,9 @@ body {
 
 .link-panels h2 {
     margin: 0;
-    margin-bottom: 11.25px;                 /* %75 -> Ilustrator 15px */
+    margin-bottom: 11.25px;
     font-family: 'Montserrat Alternates';
-    font-size: 45px;                        /* %75 -> Ilustrator 60px */
+    font-size: 45px;
     color: white;
     text-align: center;
 }
@@ -380,7 +380,7 @@ body {
 }
 
 .services .title {
-    padding-bottom: 11.25px;                /* %75 -> Ilustrator 15px */
+    padding-bottom: 11.25px;
     border-bottom: 3px solid var(--main-color);
     width: fit-content;
     margin-left: auto;
@@ -390,17 +390,17 @@ body {
 .services .title h2 {
     margin: 0;
     font-family: 'Montserrat Alternates';
-    font-size: 45px;                        /* %75 -> Ilustrator 60px */
+    font-size: 45px;
     color: black;
 }
 
 .services p {
     margin: 0;
-    max-width: 720px;                       /* %75 -> Ilustrator 960px */
+    max-width: 720px;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Poppins';
-    font-size: 18.75px;                     /* %75 -> Ilustrator 25px */
+    font-size: 18.75px;
     color: black;
     text-align: justify;
 }
@@ -411,8 +411,8 @@ body {
 }
 
 .services .tarjet {
-    width: 307.5px;                         /* %75 -> Ilustrator 410px */
-    height: 408.75px;                       /* %75 -> Ilustrator 545px */
+    width: 307.5px;
+    height: 408.75px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -423,7 +423,7 @@ body {
 .services .sub-title {
     margin: 0;
     font-family: 'Montserrat Alternates';
-    font-size: 20.25px;                     /* %75 -> Ilustrator 27px */
+    font-size: 20.25px;
     color: black;
     border-bottom: 3px solid var(--main-color);
 }
@@ -431,7 +431,7 @@ body {
 .services .tarjets p {
     margin-left: 20px;
     margin-right: 20px;
-    max-width: 240px;                       /* %75 -> Ilustrator 320px */
+    max-width: 240px;
     font-weight: 300;
 }
 
@@ -443,33 +443,33 @@ body {
 }
 
 .services .houses {
-    width: 60px;                            /* %75 -> Ilustrator 80px */
-    height: 60px;                           /* %75 -> Ilustrator 80px */
+    width: 60px;
+    height: 60px;
     background-image: url(../img/houses.svg);
 }
 
 .services .binoculars {
-    width: 60px;                            /* %75 -> Ilustrator 80px */
-    height: 60px;                           /* %75 -> Ilustrator 80px */
+    width: 60px;
+    height: 60px;
     background-image: url(../img/binoculars.svg);
 }
 
 .services .people {
-    width: 70px;                            /* %75 -> Ilustrator 80px */
-    height: 60px;                           /* %75 -> Ilustrator 80px */
+    width: 70px;
+    height: 60px;
     background-image: url(../img/people.svg);
 }
 
 .services .cup-hot {
-    width: 60px;                            /* %75 -> Ilustrator 80px */
-    height: 60px;                           /* %75 -> Ilustrator 80px */
+    width: 60px;
+    height: 60px;
     background-image: url(../img/cup-hot.svg);
 }
 
 /********************************** FACILITIES **********************************/
 
 .facilities .title {
-    padding-bottom: 11.25px;                /* %75 -> Ilustrator 15px */
+    padding-bottom: 11.25px;
     border-bottom: 3px solid var(--main-color);
     width: fit-content;
     margin-left: auto;
@@ -481,7 +481,7 @@ body {
 .facilities .title h2 {
     margin: 0;
     font-family: 'Montserrat Alternates';
-    font-size: 45px;                        /* %75 -> Ilustrator 60px */
+    font-size: 45px;
     color: black;
 }
 
@@ -513,7 +513,7 @@ body {
 .facilities .panel-footer ul li {
     margin: 0px;
     font-family: 'Poppins';
-    font-size: 18.75px;                     /* %75 -> Ilustrator 25px */
+    font-size: 18.75px;
     font-weight: 300;
     color: white;
 }
@@ -521,7 +521,7 @@ body {
 /********************************** FOOTER **********************************/
 
 .footer {
-    padding: 71.25px 0px;                   /* %75 -> Ilustrator 95px */
+    padding: 71.25px 0px;
     background-color: var(--dark-gray-color);
     display: flex;
     align-items: center;
@@ -539,28 +539,28 @@ body {
 }
 
 .footer .logo img {
-    height: 86.25px;                        /* %75 -> Ilustrator 115px */
+    height: 86.25px;
 }
 
 .footer .logo h3 {
     margin: 0;
-    margin-left: 11.25px;                   /* %75 -> Ilustrator 15px */
+    margin-left: 11.25px;
     font-family: 'Montserrat Alternates';
-    font-size: 36px;                        /* %75 -> Ilustrator 48px */
+    font-size: 36px;
     color: var(--main-color);
     text-shadow: 1px 1px 1px black;
 }
 
 .footer .copyright {
-    margin-top: 48.75px;                    /* %75 -> Ilustrator 65px */
+    margin-top: 48.75px;
     font-family: 'Geograph';
-    font-size: 16.5px;                      /* %75 -> Ilustrator 22px */
+    font-size: 16.5px;
     color: white;
 }
 
 .footer .col-2, .footer .col-3, .footer .col-4 {
     font-family: 'Geograph';
-    font-size: 18.75px;                     /* %75 -> Ilustrator 25px */
+    font-size: 18.75px;
     color: white;
 }
 
@@ -570,19 +570,19 @@ body {
 
 .footer ul {
     margin: 0px;
-    margin-top: 22.5px;                     /* %75 -> Ilustrator 30px */
+    margin-top: 22.5px;
     padding-inline-start: 20px;
 }
 
 .footer ul li {
     margin: 0px;
-    margin-top: 18.75px;                    /* %75 -> Ilustrator 25px */
+    margin-top: 18.75px;
 }
 
 .footer p {
     margin: 0px;
-    margin-top: 18.75px;                    /* %75 -> Ilustrator 25px */
-    max-width: 266.25px;                    /* %75 -> Ilustrator 355px */
+    margin-top: 18.75px;
+    max-width: 266.25px;
     text-align: justify;
 }
 
@@ -597,7 +597,7 @@ body {
 }
 
 .footer .mt-18{
-    margin-top: 18.75px;                    /* %75 -> Ilustrator 25px */
+    margin-top: 18.75px;
 }
 
 .footer .follow {
@@ -606,15 +606,15 @@ body {
 }
 
 .footer .social-networks {
-    margin-top: 18.75px;                    /* %75 -> Ilustrator 25px */
+    margin-top: 18.75px;
     display: inline-flex;
     align-items: center;
 }
 
 .footer .instagram {
-    margin-right: 11.25px;                  /* %75 -> Ilustrator 15px */
-    width: 26.25px;                         /* %75 -> Ilustrator 35px */
-    height: 26.25px;                        /* %75 -> Ilustrator 35px */
+    margin-right: 11.25px;
+    width: 26.25px;
+    height: 26.25px;
     filter: invert(100%) sepia(17%) saturate(24%) hue-rotate(357deg) brightness(105%) contrast(106%);
     background-image: url(../img/instagram.svg);
     background-size: cover;
@@ -628,9 +628,9 @@ body {
 }
 
 .footer .twitter {
-    margin-right: 11.25px;                  /* %75 -> Ilustrator 15px */
-    width: 26.25px;                         /* %75 -> Ilustrator 35px */
-    height: 26.25px;                        /* %75 -> Ilustrator 35px */
+    margin-right: 11.25px;
+    width: 26.25px;
+    height: 26.25px;
     filter: invert(100%) sepia(17%) saturate(24%) hue-rotate(357deg) brightness(105%) contrast(106%);
     background-image: url(../img/twitter.svg);
     background-size: cover;
@@ -644,7 +644,7 @@ body {
 }
 
 .footer .mt-41 {
-    margin-top: 41.25px;                    /* %75 -> Ilustrator 55px */
+    margin-top: 41.25px;
 }
 
 /********************************** ELEMENTS **********************************/
@@ -652,7 +652,7 @@ body {
 /**************** BUTTON ****************/
 
 .button {
-    height: 63.75px;                        /* %75 -> Ilustrator 85px */
+    height: 63.75px;
     background-color: var(--main-color);
     display: inline-flex;
     align-items: center;
@@ -667,19 +667,19 @@ body {
 
 .button h4 {
     margin: 0;
-    margin-left: 37.5px;                    /* %75 -> Ilustrator 50px */
+    margin-left: 37.5px;
     font-family: 'Geograph';
     text-transform: uppercase;
-    font-size: 22.5px;                      /* %75 -> Ilustrator 30px */
+    font-size: 22.5px;
     color: white;
     text-shadow: 1px 1px 1px var(--dark-main-color);
 }
 
 .button .circle-arrow-right {
-    margin-left: 11.25px;                   /* %75 -> Ilustrator 15px */
-    margin-right: 37.5px;                   /* %75 -> Ilustrator 50px */
-    width: 24px;                            /* %75 -> Ilustrator 32px */
-    height: 24px;                           /* %75 -> Ilustrator 32px */
+    margin-left: 11.25px;
+    margin-right: 37.5px;
+    width: 24px;
+    height: 24px;
     filter: invert(100%) sepia(17%) saturate(24%) hue-rotate(357deg) brightness(105%) contrast(106%) drop-shadow(1px 1px 1px var(--dark-main-color));
     background-image: url(../img/circle-arrow-right.svg);
     background-size: cover;
