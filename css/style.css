@@ -588,6 +588,108 @@ body {
     color: white;
 }
 
+/********************************** FACILITIES **********************************/
+
+.facilities-carousel .slider {
+    height: 75vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.facilities-carousel .slider .chevron-left {
+    margin-left: 30px;
+    width: 25px;
+    height: 40px;
+    filter: invert(100%) sepia(17%) saturate(24%) hue-rotate(357deg) brightness(105%) contrast(106%) drop-shadow(1px 1px 1px black);
+    background-image: url(../img/chevron-left.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.facilities-carousel .slider .chevron-right {
+    margin-right: 30px;
+    width: 25px;
+    height: 40px;
+    filter: invert(100%) sepia(17%) saturate(24%) hue-rotate(357deg) brightness(105%) contrast(106%) drop-shadow(1px 1px 1px black);
+    background-image: url(../img/chevron-right.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.facilities-carousel .slider-nav {
+    height: 25vh;
+    display: flex;
+    background-color: var(--dark-gray-color);
+}
+
+.facilities-carousel .slider-nav .item {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.facilities-carousel .slider-nav .active {
+    background: none;
+}
+
+.facilities-carousel .slider-nav .item .image {
+    filter: blur(2px);
+}
+
+.facilities-carousel .slider-nav .active .image {
+    filter: unset;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
+}
+
+.facilities-carousel .slider-nav .position {
+    width: 35px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.facilities-carousel .slider-nav .active .position {
+    width: 50px;
+    height: 5px;
+    background-color: white;
+}
+
+.facilities-carousel .slider-nav .image {
+    width: 85%;
+    height: 75%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.facilities-carousel .image-1 {
+    background-image: url(../img/facilities-1.jpg);
+}
+
+.facilities-carousel .image-2 {
+    background-image: url(../img/facilities-2.jpg);
+}
+
+.facilities-carousel .image-3 {
+    background-image: url(../img/facilities-3.jpg);
+}
+
+.facilities-carousel .image-4 {
+    background-image: url(../img/facilities-4.jpg);
+}
+
 /********************************** FOOTER **********************************/
 
 .footer {
