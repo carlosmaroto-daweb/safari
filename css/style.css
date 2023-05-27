@@ -466,6 +466,58 @@ body {
     background-image: url(../img/cup-hot.svg);
 }
 
+/********************************** FACILITIES **********************************/
+
+.facilities .title {
+    padding-bottom: 11.25px;                /* %75 -> Ilustrator 15px */
+    border-bottom: 3px solid var(--main-color);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.facilities .title h2 {
+    margin: 0;
+    font-family: 'Montserrat Alternates';
+    font-size: 45px;                        /* %75 -> Ilustrator 60px */
+    color: black;
+}
+
+.facilities .background-facilities {
+    height: 75vh;
+    background-image: url(../img/background-facilities.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.facilities .panel-footer {
+    height: 25vh;
+    background-color: var(--dark-gray-color);
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.facilities .panel-footer .col {
+    max-width: 45%;
+}
+
+.facilities .panel-footer ul {
+    margin: 0px;
+    padding-inline-start: 20px;
+}
+
+.facilities .panel-footer ul li {
+    margin: 0px;
+    font-family: 'Poppins';
+    font-size: 18.75px;                     /* %75 -> Ilustrator 25px */
+    font-weight: 300;
+    color: white;
+}
+
 /********************************** FOOTER **********************************/
 
 .footer {
