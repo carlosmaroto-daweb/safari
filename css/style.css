@@ -977,6 +977,167 @@ body {
     background-image: url(../img/history-3.jpg);
 }
 
+/********************************** EXPLORE **********************************/
+
+.explore {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.explore .title {
+    padding-bottom: 11.25px;
+    border-bottom: 3px solid var(--main-color);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.explore .title h2 {
+    margin: 0;
+    font-family: 'Montserrat Alternates';
+    font-size: 45px;
+    color: black;
+}
+
+.explore p {
+    margin: 0;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins';
+    font-size: 18.75px;
+    color: black;
+    text-align: justify;
+}
+
+.explore .tarjets {
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.explore .tarjet {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.explore .tarjet .balloon, .explore .tarjet .binoculars, .explore .tarjet .people {
+    filter: invert(70%) sepia(50%) saturate(560%) hue-rotate(355deg) brightness(100%) contrast(98%);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.explore .tarjet .balloon {
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/balloon.svg);
+}
+
+.explore .tarjet .binoculars {
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/binoculars.svg);
+}
+
+.explore .tarjet .people {
+    width: 70px;
+    height: 60px;
+    background-image: url(../img/people.svg);
+}
+
+.explore .sub-title {
+    margin: 0;
+    font-family: 'Montserrat Alternates';
+    font-size: 20.25px;
+    color: black;
+    border-bottom: 3px solid var(--main-color);
+}
+
+.explore .tarjets ul {
+    margin: 0px 20px;
+    padding-inline-start: 20px;
+    font-family: 'Poppins';
+    font-size: 18.75px;
+    font-weight: 300;
+    color: black;
+}
+
+.explore .tarjet .row {
+    display: flex;
+    margin: 0px 20px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--dark-gray-color);
+}
+
+.explore .tarjet .col {
+    display: flex;
+    flex-direction: column;
+}
+
+.explore .tarjet .item {
+    margin: 5px 10px;
+    display: inline-flex;
+}
+
+.explore .item .people, .explore .item .clock-history, .explore .item .car-front, .explore .item .balloon, .explore .item .binoculars {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    filter: invert(11%) sepia(12%) saturate(22%) hue-rotate(32deg) brightness(97%) contrast(78%);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.explore .item .people {
+    background-image: url(../img/people.svg);
+}
+
+.explore .item .clock-history {
+    background-image: url(../img/clock-history.svg);
+}
+
+.explore .item .car-front {
+    background-image: url(../img/car-front.svg);
+}
+
+.explore .item .balloon {
+    background-image: url(../img/balloon.svg);
+}
+
+.explore .item .binoculars {
+    background-image: url(../img/binoculars.svg);
+}
+
+/********************************** ANIMALS **********************************/
+
+.animals .title {
+    padding-bottom: 11.25px;
+    border-bottom: 3px solid var(--main-color);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.animals .title h2 {
+    margin: 0;
+    font-family: 'Montserrat Alternates';
+    font-size: 45px;
+    color: black;
+}
+
+.animals .panel-animals {
+    height: 100vh;
+}
+
 /********************************** FOOTER **********************************/
 
 .footer {
