@@ -644,6 +644,7 @@ body {
 
 .facilities-carousel .slider-nav .active {
     background: none;
+    box-shadow: inset 0 0 10px black;
 }
 
 .facilities-carousel .slider-nav .item .image {
@@ -869,6 +870,7 @@ body {
 
 .extra-services-carousel .slider-nav .active {
     background: none;
+    box-shadow: inset 0 0 10px black;
 }
 
 .extra-services-carousel .slider-nav .item .image {
