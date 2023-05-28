@@ -588,7 +588,7 @@ body {
     color: white;
 }
 
-/********************************** FACILITIES **********************************/
+/********************************** FACILITIES CAROUSEL **********************************/
 
 .facilities-carousel .slider {
     height: 75vh;
@@ -688,6 +688,230 @@ body {
 
 .facilities-carousel .image-4 {
     background-image: url(../img/facilities-4.jpg);
+}
+
+/********************************** EXTRA SERVICES **********************************/
+
+.extra-services .title {
+    padding-bottom: 11.25px;
+    border-bottom: 3px solid var(--main-color);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.extra-services .title h2 {
+    margin: 0;
+    font-family: 'Montserrat Alternates';
+    font-size: 45px;
+    color: black;
+}
+
+.extra-services .background-extra-services {
+    height: 75vh;
+    background-image: url(../img/background-extra-services.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.extra-services .background-extra-services .panel {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 336px;
+    height: 219.1px;
+    background-color: var(--dark-gray-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.extra-services .panel .panel-button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.extra-services .panel .row {
+    display: inline-flex;
+    justify-content: space-evenly;
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: white;
+}
+
+.extra-services .panel .col {
+    display: flex;
+    flex-direction: column;
+}
+
+.extra-services .panel .item {
+    margin: 5px 0px;
+    display: inline-flex;
+}
+
+.extra-services .cup-hot, .extra-services .droplet, .extra-services .water, .extra-services .egg-fried, .extra-services .moon-stars, .extra-services .arrow-through-heart {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    filter: invert(100%) sepia(17%) saturate(24%) hue-rotate(357deg) brightness(105%) contrast(106%);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.extra-services .cup-hot {
+    background-image: url(../img/cup-hot.svg);
+}
+
+.extra-services .droplet {
+    background-image: url(../img/droplet.svg);
+}
+
+.extra-services .water {
+    background-image: url(../img/water.svg);
+}
+
+.extra-services .egg-fried {
+    background-image: url(../img/egg-fried.svg);
+}
+
+.extra-services .moon-stars {
+    background-image: url(../img/moon-stars.svg);
+}
+
+.extra-services .arrow-through-heart {
+    background-image: url(../img/arrow-through-heart.svg);
+}
+
+.extra-services .panel-footer {
+    height: 25vh;
+    background-color: var(--dark-gray-color);
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.extra-services .panel-footer .col {
+    max-width: 45%;
+}
+
+.extra-services .panel-footer ul {
+    margin: 0px;
+    padding-inline-start: 20px;
+}
+
+.extra-services .panel-footer ul li {
+    margin: 0px;
+    font-family: 'Poppins';
+    font-size: 18.75px;
+    font-weight: 300;
+    color: white;
+}
+
+/********************************** EXTRA SERVICES CAROUSEL **********************************/
+
+.extra-services-carousel .slider {
+    height: 75vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.extra-services-carousel .slider .chevron-left {
+    margin-left: 30px;
+    width: 25px;
+    height: 40px;
+    filter: invert(100%) sepia(17%) saturate(24%) hue-rotate(357deg) brightness(105%) contrast(106%) drop-shadow(1px 1px 1px black);
+    background-image: url(../img/chevron-left.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.extra-services-carousel .slider .chevron-right {
+    margin-right: 30px;
+    width: 25px;
+    height: 40px;
+    filter: invert(100%) sepia(17%) saturate(24%) hue-rotate(357deg) brightness(105%) contrast(106%) drop-shadow(1px 1px 1px black);
+    background-image: url(../img/chevron-right.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.extra-services-carousel .slider-nav {
+    height: 25vh;
+    display: flex;
+    background-color: var(--dark-gray-color);
+}
+
+.extra-services-carousel .slider-nav .item {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.extra-services-carousel .slider-nav .active {
+    background: none;
+}
+
+.extra-services-carousel .slider-nav .item .image {
+    filter: blur(2px);
+}
+
+.extra-services-carousel .slider-nav .active .image {
+    filter: unset;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
+}
+
+.extra-services-carousel .slider-nav .position {
+    width: 35px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.extra-services-carousel .slider-nav .active .position {
+    width: 50px;
+    height: 5px;
+    background-color: white;
+}
+
+.extra-services-carousel .slider-nav .image {
+    width: 85%;
+    height: 75%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.extra-services-carousel .image-1 {
+    background-image: url(../img/extra-services-1.jpg);
+}
+
+.extra-services-carousel .image-2 {
+    background-image: url(../img/extra-services-2.jpg);
+}
+
+.extra-services-carousel .image-3 {
+    background-image: url(../img/extra-services-3.jpg);
+}
+
+.extra-services-carousel .image-4 {
+    background-image: url(../img/extra-services-4.jpg);
 }
 
 /********************************** FOOTER **********************************/
