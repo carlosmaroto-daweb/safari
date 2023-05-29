@@ -626,13 +626,15 @@ body {
 }
 
 .facilities-carousel .slider-nav {
+    width: 100%;
     height: 25vh;
     display: flex;
+    overflow: hidden;
     background-color: var(--dark-gray-color);
 }
 
 .facilities-carousel .slider-nav .item {
-    width: 25%;
+    min-width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -852,13 +854,15 @@ body {
 }
 
 .extra-services-carousel .slider-nav {
+    width: 100%;
     height: 25vh;
     display: flex;
+    overflow: hidden;
     background-color: var(--dark-gray-color);
 }
 
 .extra-services-carousel .slider-nav .item {
-    width: 25%;
+    min-width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
