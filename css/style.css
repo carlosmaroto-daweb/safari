@@ -1150,13 +1150,8 @@ body {
     margin-left: 2%;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow-y: scroll;
     direction: rtl;
-}
-
-.animals .nav-list:hover {
-    overflow: scroll;
-    overflow-x: hidden;
 }
 
 .animals .nav-list::-webkit-scrollbar {
@@ -1312,12 +1307,7 @@ body {
     background-color: white;
     border: unset;
     resize: none;
-    overflow: hidden;
-}
-
-.animals .body-text .animal-text:hover {
-    overflow: scroll;
-    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .animals .body-text .animal-text:focus {
