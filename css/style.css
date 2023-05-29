@@ -1502,6 +1502,352 @@ body {
     background-color: red;
 }
 
+/********************************** ROUTE 2 **********************************/
+
+.route-2 .title {
+    padding-bottom: 11.25px;
+    border-bottom: 3px solid var(--main-color);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.route-2 .title h2 {
+    margin: 0;
+    font-family: 'Montserrat Alternates';
+    font-size: 45px;
+    color: black;
+}
+
+.route-2 .slider {
+    height: 75vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.route-2 .slider .chevron-left {
+    margin-left: 30px;
+    width: 25px;
+    height: 40px;
+    filter: invert(100%) sepia(17%) saturate(24%) hue-rotate(357deg) brightness(105%) contrast(106%) drop-shadow(1px 1px 1px black);
+    background-image: url(../img/chevron-left.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.route-2 .slider .chevron-right {
+    margin-right: 30px;
+    width: 25px;
+    height: 40px;
+    filter: invert(100%) sepia(17%) saturate(24%) hue-rotate(357deg) brightness(105%) contrast(106%) drop-shadow(1px 1px 1px black);
+    background-image: url(../img/chevron-right.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.route-2 .slider .button {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+.route-2 .slider-nav {
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    background-color: var(--dark-gray-color);
+}
+
+.route-2 .slider-nav .item {
+    min-width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.route-2 .slider-nav .item .position {
+    width: 15px;
+    height: 15px;
+    border-radius: 7.5px;
+    background-color: var(--main-color);
+}
+
+.route-2 .slider-nav .active .position {
+    width: 112.5px;
+}
+
+.route-2 .slider-nav .item .body-item {
+    width: 100%;
+    min-height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-right: 1px solid white;
+}
+
+.route-2 .slider-nav .item:last-child .body-item{
+    border-right: none;
+}
+
+.route-2 .slider-nav .item .body-item * {
+    opacity: .5;
+}
+
+.route-2 .slider-nav .item:hover .body-item * {
+    opacity: 1;
+}
+
+.route-2 .slider-nav .active .body-item * {
+    opacity: 1;
+}
+
+.route-2 .body-item .subtitle {
+    max-width: 300px;
+    font-family: 'Montserrat Alternates';
+    font-size: 22.5px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.route-2 .body-item .description {
+    max-width: 300px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+
+.route-2 .image-1 {
+    background-image: url(../img/route-2-1.jpg);
+}
+
+.route-2 .image-2 {
+    background-image: url(../img/route-2-2.jpg);
+}
+
+.route-2 .image-3 {
+    background-image: url(../img/route-2-3.jpg);
+}
+
+.route-2 .image-4 {
+    background-image: url(../img/route-2-4.jpg);
+}
+
+.route-2 .route-info {
+    display: flex;
+}
+
+.route-2 .route-info .text {
+    height: 50vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.route-2 .route-info .text p {
+    width: 85%;
+    font-family: 'Poppins';
+    font-size: 18.75px;
+    color: black;
+    text-align: justify;
+}
+
+.route-2 .route-info .location {
+    height: 50vh;
+    width: 50%;
+    background-color: red;
+}
+
+/********************************** ROUTE 3 **********************************/
+
+.route-3 .title {
+    padding-bottom: 11.25px;
+    border-bottom: 3px solid var(--main-color);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.route-3 .title h2 {
+    margin: 0;
+    font-family: 'Montserrat Alternates';
+    font-size: 45px;
+    color: black;
+}
+
+.route-3 .slider {
+    height: 75vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.route-3 .slider .chevron-left {
+    margin-left: 30px;
+    width: 25px;
+    height: 40px;
+    filter: invert(100%) sepia(17%) saturate(24%) hue-rotate(357deg) brightness(105%) contrast(106%) drop-shadow(1px 1px 1px black);
+    background-image: url(../img/chevron-left.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.route-3 .slider .chevron-right {
+    margin-right: 30px;
+    width: 25px;
+    height: 40px;
+    filter: invert(100%) sepia(17%) saturate(24%) hue-rotate(357deg) brightness(105%) contrast(106%) drop-shadow(1px 1px 1px black);
+    background-image: url(../img/chevron-right.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.route-3 .slider .button {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+.route-3 .slider-nav {
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    background-color: var(--dark-gray-color);
+}
+
+.route-3 .slider-nav .item {
+    min-width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.route-3 .slider-nav .item .position {
+    width: 15px;
+    height: 15px;
+    border-radius: 7.5px;
+    background-color: var(--main-color);
+}
+
+.route-3 .slider-nav .active .position {
+    width: 112.5px;
+}
+
+.route-3 .slider-nav .item .body-item {
+    width: 100%;
+    min-height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-right: 1px solid white;
+}
+
+.route-3 .slider-nav .item:last-child .body-item{
+    border-right: none;
+}
+
+.route-3 .slider-nav .item .body-item * {
+    opacity: .5;
+}
+
+.route-3 .slider-nav .item:hover .body-item * {
+    opacity: 1;
+}
+
+.route-3 .slider-nav .active .body-item * {
+    opacity: 1;
+}
+
+.route-3 .body-item .subtitle {
+    max-width: 300px;
+    font-family: 'Montserrat Alternates';
+    font-size: 22.5px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.route-3 .body-item .description {
+    max-width: 300px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+
+.route-3 .image-1 {
+    background-image: url(../img/route-3-1.jpg);
+}
+
+.route-3 .image-2 {
+    background-image: url(../img/route-3-2.jpg);
+}
+
+.route-3 .image-3 {
+    background-image: url(../img/route-3-3.jpg);
+}
+
+.route-3 .image-4 {
+    background-image: url(../img/route-3-4.jpg);
+}
+
+.route-3 .route-info {
+    display: flex;
+}
+
+.route-3 .route-info .text {
+    height: 50vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.route-3 .route-info .text p {
+    width: 85%;
+    font-family: 'Poppins';
+    font-size: 18.75px;
+    color: black;
+    text-align: justify;
+}
+
+.route-3 .route-info .location {
+    height: 50vh;
+    width: 50%;
+    background-color: red;
+}
+
 /********************************** FOOTER **********************************/
 
 .footer {
