@@ -1476,6 +1476,32 @@ body {
     background-image: url(../img/route-1-4.jpg);
 }
 
+.route-1 .route-info {
+    display: flex;
+}
+
+.route-1 .route-info .text {
+    height: 50vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.route-1 .route-info .text p {
+    width: 85%;
+    font-family: 'Poppins';
+    font-size: 18.75px;
+    color: black;
+    text-align: justify;
+}
+
+.route-1 .route-info .location {
+    height: 50vh;
+    width: 50%;
+    background-color: red;
+}
+
 /********************************** FOOTER **********************************/
 
 .footer {
