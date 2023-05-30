@@ -565,6 +565,7 @@ body {
 }
 
 .facilities .panel-footer {
+    width: 100%;
     height: 25vh;
     background-color: var(--dark-gray-color);
     display: inline-flex;
@@ -793,6 +794,7 @@ body {
 }
 
 .extra-services .panel-footer {
+    width: 100%;
     height: 25vh;
     background-color: var(--dark-gray-color);
     display: inline-flex;
@@ -1022,6 +1024,7 @@ body {
 }
 
 .explore .tarjet {
+    min-width: 335px;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -1591,7 +1594,7 @@ body {
 
 .route-2 .slider-nav .item .body-item {
     width: 100%;
-    min-height: 65%;
+    min-height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1764,7 +1767,7 @@ body {
 
 .route-3 .slider-nav .item .body-item {
     width: 100%;
-    min-height: 65%;
+    min-height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
