@@ -2002,6 +2002,103 @@ body {
     background-repeat: no-repeat;
 }
 
+/********************************** CONTRIBUTION **********************************/
+
+.contribution {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contribution .title {
+    padding-bottom: 11.25px;
+    border-bottom: 3px solid var(--main-color);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contribution .title h2 {
+    margin: 0;
+    font-family: 'Montserrat Alternates';
+    font-size: 45px;
+    color: black;
+}
+
+.contribution .tarjets {
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.contribution .tarjet {
+    width: 325px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.contribution .icon-percentage {
+    display: inline-flex;
+    align-items: center;
+}
+
+.contribution .percentage {
+    font-family: 'Montserrat Alternates';
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.contribution .sub-title {
+    margin: 0;
+    font-family: 'Montserrat Alternates';
+    font-size: 20.25px;
+    color: black;
+    border-bottom: 3px solid var(--main-color);
+}
+
+.contribution .tarjets p {
+    margin: 0px;
+    max-width: 240px;
+    font-weight: 300;
+    font-family: 'Poppins';
+    font-size: 18.75px;
+    color: black;
+    text-align: justify;
+}
+
+.contribution .globe-europe-africa, .contribution .geo-alt, .contribution .people {
+    filter: invert(84%) sepia(15%) saturate(2096%) hue-rotate(335deg) brightness(98%) contrast(101%);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.contribution .globe-europe-africa {
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/globe-europe-africa.svg);
+}
+
+.contribution .geo-alt {
+    margin-right: 5px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/geo-alt.svg);
+}
+
+.contribution .people {
+    margin-right: 5px;
+    width: 70px;
+    height: 60px;
+    background-image: url(../img/people.svg);
+}
+
 /********************************** FOOTER **********************************/
 
 .footer {
