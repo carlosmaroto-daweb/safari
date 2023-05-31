@@ -1905,6 +1905,103 @@ body {
     background-repeat: no-repeat;
 }
 
+/********************************** SERVICES **********************************/
+
+.tlr {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tlr .title {
+    padding-bottom: 11.25px;
+    border-bottom: 3px solid var(--main-color);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tlr .title h2 {
+    margin: 0;
+    font-family: 'Montserrat Alternates';
+    font-size: 45px;
+    color: black;
+}
+
+.tlr .text {
+    margin: 0;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins';
+    font-size: 18.75px;
+    color: black;
+    text-align: justify;
+}
+
+.tlr .tarjets {
+    display: flex;
+    flex-direction: column;
+}
+
+.tlr .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+}
+
+.tlr .tarjet {
+    display: inline-flex;
+    align-items: center;
+}
+
+.tlr .tarjet p {
+    max-width: 355px;
+    margin-left: 30px;
+    font-family: 'Poppins';
+    font-size: 18.75px;
+    color: black;
+    text-align: justify;
+}
+
+.tlr .conservation {
+    width: 150px;
+    height: 150px;
+    background-image: url(../img/conservation.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.tlr .culture {
+    width: 150px;
+    height: 150px;
+    background-image: url(../img/culture.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.tlr .community {
+    width: 150px;
+    height: 150px;
+    background-image: url(../img/community.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.tlr .commerce {
+    width: 150px;
+    height: 150px;
+    background-image: url(../img/commerce.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
 /********************************** FOOTER **********************************/
 
 .footer {
