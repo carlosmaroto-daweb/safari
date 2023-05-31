@@ -2099,6 +2099,64 @@ body {
     background-image: url(../img/people.svg);
 }
 
+/********************************** CURRENT SCOPE **********************************/
+
+.current-scope .title {
+    padding-bottom: 11.25px;
+    border-bottom: 3px solid var(--main-color);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.current-scope .title h2 {
+    margin: 0;
+    font-family: 'Montserrat Alternates';
+    font-size: 45px;
+    color: black;
+}
+
+.current-scope .background-current-scope {
+    height: 50vh;
+    background-image: url(../img/background-current-scope.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.current-scope .content {
+    display: flex;
+}
+
+.current-scope .item {
+    width: 240px;
+    margin: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 1px 1px 1px black;
+}
+
+.current-scope .item .number {
+    font-family: 'Montserrat Alternates';
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+}
+
+.current-scope .item .text {
+    font-family: 'Poppins';
+    font-size: 18.75px;
+    font-weight: 300;
+    color: white;
+    text-align: center
+}
+
 /********************************** FOOTER **********************************/
 
 .footer {
