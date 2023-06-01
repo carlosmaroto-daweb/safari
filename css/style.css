@@ -1185,6 +1185,7 @@ body {
 
 .animals .nav-list .item * {
     opacity: .5;
+    transition: all .3s;
 }
 
 .animals .nav-list .item:hover * {
@@ -1436,6 +1437,7 @@ body {
 
 .route-1 .slider-nav .item .body-item * {
     opacity: .5;
+    transition: all .3s;
 }
 
 .route-1 .slider-nav .item:hover .body-item * {
@@ -1609,6 +1611,7 @@ body {
 
 .route-2 .slider-nav .item .body-item * {
     opacity: .5;
+    transition: all .3s;
 }
 
 .route-2 .slider-nav .item:hover .body-item * {
@@ -1782,6 +1785,7 @@ body {
 
 .route-3 .slider-nav .item .body-item * {
     opacity: .5;
+    transition: all .3s;
 }
 
 .route-3 .slider-nav .item:hover .body-item * {
