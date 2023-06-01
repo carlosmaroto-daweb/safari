@@ -2226,6 +2226,131 @@ body {
     background-repeat: no-repeat;
 }
 
+/********************************** CONTACT **********************************/
+
+.contact {
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact .title {
+    padding-bottom: 11.25px;
+    border-bottom: 3px solid var(--main-color);
+    width: fit-content;
+}
+
+.contact .title h2 {
+    margin: 0;
+    font-family: 'Montserrat Alternates';
+    font-size: 45px;
+    color: black;
+}
+
+.contact .text {
+    max-width: 720px;
+}
+
+.contact .text p {
+    margin: 0px;
+    font-family: 'Poppins';
+    font-size: 18.75px;
+    color: black;
+    text-align: justify;
+}
+
+.contact .icons {
+    width: 720px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact .item {
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .telephone-inbound, .contact .geo-alt, .contact .envelope-at {
+    width: 60px;
+    height: 60px;
+    filter: invert(84%) sepia(15%) saturate(2096%) hue-rotate(335deg) brightness(98%) contrast(101%);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.contact .telephone-inbound {
+    background-image: url(../img/telephone-inbound.svg);
+}
+
+.contact .geo-alt {
+    background-image: url(../img/geo-alt.svg);
+}
+
+.contact .envelope-at {
+    background-image: url(../img/envelope-at.svg);
+}
+
+.contact .subtitle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat Alternates';
+    font-size: 22.5px;
+    font-weight: 700;
+    color: black;
+}
+
+.contact .icons .text {
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 300;
+    color: black;
+}
+
+.contact form {
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .row {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.contact form input {
+    width: 45%;
+    padding: 5px 10px;
+    border: 3px solid var(--main-color);
+    font-family: 'Poppins';
+    font-size: 18.75px;
+    color: #848484;
+}
+
+.contact form input:focus {
+    outline: none;
+    border: 3px solid var(--dark-main-color);
+}
+
+.contact form textarea {
+    height: 150px;
+    margin-top: 15px;
+    padding: 5px 10px;
+    border: 3px solid var(--main-color);
+    font-family: 'Poppins';
+    font-size: 18.75px;
+    color: #848484;
+}
+
+.contact form textarea:focus {
+    outline: none;
+    border: 3px solid var(--dark-main-color);
+}
+
 /********************************** WHERE **********************************/
 
 .where {
