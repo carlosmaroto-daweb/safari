@@ -2126,16 +2126,16 @@ body {
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .current-scope .content {
+    width: 100%;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .current-scope .item {
     width: 240px;
-    margin: 0px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2155,6 +2155,71 @@ body {
     font-weight: 300;
     color: white;
     text-align: center
+}
+
+/********************************** PARTNERS **********************************/
+
+.partners {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.partners .title {
+    padding-bottom: 11.25px;
+    border-bottom: 3px solid var(--main-color);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.partners .title h2 {
+    margin: 0;
+    font-family: 'Montserrat Alternates';
+    font-size: 45px;
+    color: black;
+}
+
+.partners .list {
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.partners .partner-1 {
+    width: 180px;
+    height: 85px;
+    background-image: url(../img/partner-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.partners .partner-2 {
+    width: 150px;
+    height: 85px;
+    background-image: url(../img/partner-2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.partners .partner-3 {
+    width: 110px;
+    height: 85px;
+    background-image: url(../img/partner-3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.partners .partner-4 {
+    width: 250px;
+    height: 85px;
+    background-image: url(../img/partner-4.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 /********************************** FOOTER **********************************/
