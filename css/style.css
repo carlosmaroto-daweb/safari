@@ -2226,6 +2226,47 @@ body {
     background-repeat: no-repeat;
 }
 
+/********************************** WHERE **********************************/
+
+.where {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.where .title {
+    padding-bottom: 11.25px;
+    border-bottom: 3px solid var(--main-color);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.where .title h2 {
+    margin: 0;
+    font-family: 'Montserrat Alternates';
+    font-size: 45px;
+    color: black;
+}
+
+.where .text {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins';
+    font-size: 18.75px;
+    color: black;
+    text-align: justify;
+}
+
+.where .map {
+    height: 50vh;
+    background-color: red;
+}
+
 /********************************** GETTING HERE **********************************/
 
 .getting-here .title {
