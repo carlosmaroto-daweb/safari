@@ -647,8 +647,12 @@ body {
     width: 100%;
     height: 25vh;
     display: flex;
-    overflow: hidden;
+    overflow-x: scroll;
     background-color: var(--dark-gray-color);
+}
+
+.facilities-carousel .slider-nav::-webkit-scrollbar {
+    display: none;
 }
 
 .facilities-carousel .slider-nav .item {
@@ -884,8 +888,12 @@ body {
     width: 100%;
     height: 25vh;
     display: flex;
-    overflow: hidden;
+    overflow-x: scroll;
     background-color: var(--dark-gray-color);
+}
+
+.extra-services-carousel .slider-nav::-webkit-scrollbar {
+    display: none;
 }
 
 .extra-services-carousel .slider-nav .item {
