@@ -1208,7 +1208,7 @@ body {
     color: white;
 }
 
-.animals .icon-leopard, .animals .icon-lion, .animals .icon-rhino, .animals .icon-elephant, .animals .icon-buffalo, .animals .icon-giraffe {
+.animals .icon-leopard, .animals .icon-lion, .animals .icon-rhino, .animals .icon-elephant, .animals .icon-buffalo, .animals .icon-giraffe, .animals .icon-hippo, .animals .icon-zebra, .animals .icon-gazelle {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1254,6 +1254,27 @@ body {
     height: 85px;
     margin-right: 65px;
     background-image: url(../img/icon-giraffe.png);
+}
+
+.animals .icon-hippo {
+    width: 60px;
+    height: 70px;
+    margin-right: 65px;
+    background-image: url(../img/icon-hippo.png);
+}
+
+.animals .icon-zebra {
+    width: 60px;
+    height: 85px;
+    margin-right: 65px;
+    background-image: url(../img/icon-zebra.png);
+}
+
+.animals .icon-gazelle {
+    width: 60px;
+    height: 85px;
+    margin-right: 65px;
+    background-image: url(../img/icon-gazelle.png);
 }
 
 .animals .info-animal {
