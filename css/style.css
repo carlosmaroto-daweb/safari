@@ -1504,7 +1504,6 @@ body {
 .route-1 .route-info .location {
     height: 50vh;
     width: 50%;
-    background-color: red;
 }
 
 /********************************** ROUTE 2 **********************************/
@@ -1678,7 +1677,6 @@ body {
 .route-2 .route-info .location {
     height: 50vh;
     width: 50%;
-    background-color: red;
 }
 
 /********************************** ROUTE 3 **********************************/
@@ -1852,7 +1850,6 @@ body {
 .route-3 .route-info .location {
     height: 50vh;
     width: 50%;
-    background-color: red;
 }
 
 /********************************** VISION **********************************/
@@ -2389,7 +2386,6 @@ body {
 
 .where .map {
     height: 50vh;
-    background-color: red;
 }
 
 /********************************** GETTING HERE **********************************/
