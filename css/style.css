@@ -696,20 +696,28 @@ body {
     background-repeat: no-repeat;
 }
 
-.facilities-carousel .image-1 {
+.facilities-carousel .facilities-1 {
     background-image: url(../img/facilities-1.jpg);
 }
 
-.facilities-carousel .image-2 {
+.facilities-carousel .facilities-2 {
     background-image: url(../img/facilities-2.jpg);
 }
 
-.facilities-carousel .image-3 {
+.facilities-carousel .facilities-3 {
     background-image: url(../img/facilities-3.jpg);
 }
 
-.facilities-carousel .image-4 {
+.facilities-carousel .facilities-4 {
     background-image: url(../img/facilities-4.jpg);
+}
+
+.facilities-carousel .facilities-5 {
+    background-image: url(../img/facilities-5.jpg);
+}
+
+.facilities-carousel .facilities-6 {
+    background-image: url(../img/facilities-6.jpg);
 }
 
 /********************************** EXTRA SERVICES **********************************/
