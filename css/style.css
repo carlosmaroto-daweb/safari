@@ -933,20 +933,28 @@ body {
     background-repeat: no-repeat;
 }
 
-.extra-services-carousel .image-1 {
+.extra-services-carousel .extra-services-1 {
     background-image: url(../img/extra-services-1.jpg);
 }
 
-.extra-services-carousel .image-2 {
+.extra-services-carousel .extra-services-2 {
     background-image: url(../img/extra-services-2.jpg);
 }
 
-.extra-services-carousel .image-3 {
+.extra-services-carousel .extra-services-3 {
     background-image: url(../img/extra-services-3.jpg);
 }
 
-.extra-services-carousel .image-4 {
+.extra-services-carousel .extra-services-4 {
     background-image: url(../img/extra-services-4.jpg);
+}
+
+.extra-services-carousel .extra-services-5 {
+    background-image: url(../img/extra-services-5.jpg);
+}
+
+.extra-services-carousel .extra-services-6 {
+    background-image: url(../img/extra-services-6.jpg);
 }
 
 /********************************** HISTORY **********************************/
