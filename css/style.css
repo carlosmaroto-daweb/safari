@@ -1290,28 +1290,40 @@ body {
     background-repeat: no-repeat;
 }
 
-.animals .image-1 {
+.animals .animal-1 {
     background-image: url(../img/animal-1.jpg);
 }
 
-.animals .image-2 {
+.animals .animal-2 {
     background-image: url(../img/animal-2.jpg);
 }
 
-.animals .image-3 {
+.animals .animal-3 {
     background-image: url(../img/animal-3.jpg);
 }
 
-.animals .image-4 {
+.animals .animal-4 {
     background-image: url(../img/animal-4.jpg);
 }
 
-.animals .image-5 {
+.animals .animal-5 {
     background-image: url(../img/animal-5.jpg);
 }
 
-.animals .image-6 {
+.animals .animal-6 {
     background-image: url(../img/animal-6.jpg);
+}
+
+.animals .animal-7 {
+    background-image: url(../img/animal-7.jpg);
+}
+
+.animals .animal-8 {
+    background-image: url(../img/animal-8.jpg);
+}
+
+.animals .animal-9 {
+    background-image: url(../img/animal-9.jpg);
 }
 
 .animals .body-text {
