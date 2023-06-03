@@ -1382,14 +1382,19 @@ body {
     font-size: 18.75px;
     color: black;
     text-align: justify;
-    background-color: white;
-    border: unset;
-    resize: none;
     overflow-y: scroll;
 }
 
-.animals .body-text .animal-text:focus {
-    outline: none !important;
+.animals .body-text .animal-text p {
+    margin-top: 0px;
+}
+
+.animals .body-text .animal-text p:last-child {
+    margin-bottom: 0px;
+}
+
+.animals .body-text .animal-text p span {
+    font-weight: 700;
 }
 
 .animals .body-text .animal-text::-webkit-scrollbar {
@@ -2415,6 +2420,7 @@ body {
     font-family: 'Poppins';
     font-size: 18.75px;
     color: #848484;
+    resize: none;
 }
 
 .contact form textarea:focus {
