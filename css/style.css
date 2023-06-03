@@ -1568,12 +1568,13 @@ body {
     height: 50vh;
     width: 50%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .route-1 .route-info .text p {
-    width: 85%;
+    width: 75%;
     font-family: 'Poppins';
     font-size: 18.75px;
     color: black;
@@ -1741,12 +1742,13 @@ body {
     height: 50vh;
     width: 50%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .route-2 .route-info .text p {
-    width: 85%;
+    width: 75%;
     font-family: 'Poppins';
     font-size: 18.75px;
     color: black;
@@ -1914,12 +1916,13 @@ body {
     height: 50vh;
     width: 50%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .route-3 .route-info .text p {
-    width: 85%;
+    width: 75%;
     font-family: 'Poppins';
     font-size: 18.75px;
     color: black;

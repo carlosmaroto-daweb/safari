@@ -157,3 +157,438 @@ animal_9.addEventListener("click", function(){
     }
     animal_9.classList.add('active');
 });
+
+/********************************** ROUTE 1 **********************************/
+
+const route_1_slider        = document.getElementById('route-1-slider');
+const route_1_chevron_left  = document.getElementById('route-1-chevron-left');
+const route_1_chevron_right = document.getElementById('route-1-chevron-right');
+const child_route_1_nav     = document.getElementById('route-1-nav').children;
+const route_1_1             = document.getElementById('route-1-1');
+const route_1_2             = document.getElementById('route-1-2');
+const route_1_3             = document.getElementById('route-1-3');
+const route_1_4             = document.getElementById('route-1-4');
+const route_1_text          = document.getElementById('route-1-text');
+const route_1_map           = document.getElementById('route-1-map');
+
+route_1_1.addEventListener("click", function(){
+    route_1_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+    route_1_slider.classList.add('image-1');
+    for (let i=0; i<child_route_1_nav.length; i++) {
+        child_route_1_nav[i].classList.remove('active');
+    }
+    route_1_1.classList.add('active');
+    route_1_text.innerHTML =
+        "<p>Embark on an unforgettable adventure at Olare Motorogi Conservancy, a private reserve in Masai Mara, Africa. Explore wildlife in its natural habitat, guided by experts and rugged off-road vehicles. Enjoy stunning sunrises and sunsets, and immerse yourself in the magic of Africa while staying in luxurious accommodations.</p>" +
+        "<p>Join our safari route and experience a unique journey that connects you with the untamed beauty of the African wilderness.</p>";
+    route_1_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40094.46279443385!2d35.18166338056334!3d-1.3397192197925254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182cf7d37bb6eb8d%3A0xe35e141f126f895!2sOlare%20Orok%20Conservancy!5e0!3m2!1ses!2ses!4v1685704498757!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+});
+route_1_2.addEventListener("click", function(){
+    route_1_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+    route_1_slider.classList.add('image-2');
+    for (let i=0; i<child_route_1_nav.length; i++) {
+        child_route_1_nav[i].classList.remove('active');
+    }
+    route_1_2.classList.add('active');
+    route_1_text.innerHTML =
+        "<p>Experience the thrill of the savannah as you get up close with wild animals, feed them, and even have the chance to touch them. Join us for this unique adventure, surrounded by the beauty of nature and guided by experts.</p>" +
+        "<p>Create unforgettable memories as you interact safely and respectfully with these incredible creatures. Don't miss out on the opportunity to connect with wildlife and appreciate the diversity of our planet.</p>";
+    route_1_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51743.4957772083!2d35.08791381821029!3d-1.252032673449127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182c8cc02316409f%3A0xb3ecf68b5b9329!2sLeopard%20Gorge!5e0!3m2!1ses!2ses!4v1685796237771!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+});
+route_1_3.addEventListener("click", function(){
+    route_1_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+    route_1_slider.classList.add('image-3');
+    for (let i=0; i<child_route_1_nav.length; i++) {
+        child_route_1_nav[i].classList.remove('active');
+    }
+    route_1_3.classList.add('active');
+    route_1_text.innerHTML =
+        "<p>An exhilarating adventure soaring above the untamed beauty of Masai Mara. Immerse yourself in the awe-inspiring panorama as you glide gracefully through the skies, capturing breathtaking views of the wildlife-rich savannah below.</p>" +
+        "<p>This unforgettable experience offers a unique perspective, allowing you to witness the natural wonders of Africa from a bird's eye view. Drift with the gentle breeze, as the golden sunrise paints the horizon, and spot majestic creatures in their natural habitat.</p>";
+    route_1_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d133556.21730848923!2d35.70717585921946!3d-1.1112130999778937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182c03ff37fcea6b%3A0xd1eea3fe6edc24c!2sMara%20Hot%20Air%20Balloon%20Safari!5e0!3m2!1ses!2ses!4v1685795781956!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+});
+route_1_4.addEventListener("click", function(){
+    route_1_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+    route_1_slider.classList.add('image-4');
+    for (let i=0; i<child_route_1_nav.length; i++) {
+        child_route_1_nav[i].classList.remove('active');
+    }
+    route_1_4.classList.add('active');
+    route_1_text.innerHTML =
+        "<p>Join our exclusive safari adventure and delight in a captivating dinner amidst the untamed beauty of the savannah. As the African sun sets, relish a sumptuous meal by a crackling bonfire.</p>" +
+        "<p>Immerse yourself in the wild, surrounded by enchanting sights, sounds, and scents. Expert guides will share tales of the African bush, adding depth to your experience. Listen to the symphony of nature as nocturnal creatures awaken.</p>";
+    route_1_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51741.64918651228!2d35.14441857212401!3d-1.3423336178489234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182cf754a4af1361%3A0xce597fba10053ec8!2sMara%20Expedition%20Camp!5e0!3m2!1ses!2ses!4v1685796179566!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+});
+
+route_1_chevron_left.addEventListener("click", function(){
+    let pos2 = route_1_slider.classList.value.includes('image-2');
+    let pos3 = route_1_slider.classList.value.includes('image-3');
+    let pos4 = route_1_slider.classList.value.includes('image-4');
+    if(pos2) {
+        route_1_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+        route_1_slider.classList.add('image-1');
+        for (let i=0; i<child_route_1_nav.length; i++) {
+            child_route_1_nav[i].classList.remove('active');
+        }
+        route_1_1.classList.add('active');
+        route_1_text.innerHTML =
+            "<p>Embark on an unforgettable adventure at Olare Motorogi Conservancy, a private reserve in Masai Mara, Africa. Explore wildlife in its natural habitat, guided by experts and rugged off-road vehicles. Enjoy stunning sunrises and sunsets, and immerse yourself in the magic of Africa while staying in luxurious accommodations.</p>" +
+            "<p>Join our safari route and experience a unique journey that connects you with the untamed beauty of the African wilderness.</p>";
+        route_1_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40094.46279443385!2d35.18166338056334!3d-1.3397192197925254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182cf7d37bb6eb8d%3A0xe35e141f126f895!2sOlare%20Orok%20Conservancy!5e0!3m2!1ses!2ses!4v1685704498757!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    }
+    else if(pos3) {
+        route_1_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+        route_1_slider.classList.add('image-2');
+        for (let i=0; i<child_route_1_nav.length; i++) {
+            child_route_1_nav[i].classList.remove('active');
+        }
+        route_1_2.classList.add('active');
+        route_1_text.innerHTML =
+            "<p>Experience the thrill of the savannah as you get up close with wild animals, feed them, and even have the chance to touch them. Join us for this unique adventure, surrounded by the beauty of nature and guided by experts.</p>" +
+            "<p>Create unforgettable memories as you interact safely and respectfully with these incredible creatures. Don't miss out on the opportunity to connect with wildlife and appreciate the diversity of our planet.</p>";
+        route_1_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51743.4957772083!2d35.08791381821029!3d-1.252032673449127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182c8cc02316409f%3A0xb3ecf68b5b9329!2sLeopard%20Gorge!5e0!3m2!1ses!2ses!4v1685796237771!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    }
+    else if(pos4) {
+        route_1_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+        route_1_slider.classList.add('image-3');
+        for (let i=0; i<child_route_1_nav.length; i++) {
+            child_route_1_nav[i].classList.remove('active');
+        }
+        route_1_3.classList.add('active');
+        route_1_text.innerHTML =
+            "<p>An exhilarating adventure soaring above the untamed beauty of Masai Mara. Immerse yourself in the awe-inspiring panorama as you glide gracefully through the skies, capturing breathtaking views of the wildlife-rich savannah below.</p>" +
+            "<p>This unforgettable experience offers a unique perspective, allowing you to witness the natural wonders of Africa from a bird's eye view. Drift with the gentle breeze, as the golden sunrise paints the horizon, and spot majestic creatures in their natural habitat.</p>";
+        route_1_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d133556.21730848923!2d35.70717585921946!3d-1.1112130999778937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182c03ff37fcea6b%3A0xd1eea3fe6edc24c!2sMara%20Hot%20Air%20Balloon%20Safari!5e0!3m2!1ses!2ses!4v1685795781956!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    }
+});
+route_1_chevron_right.addEventListener("click", function(){
+    let pos1 = route_1_slider.classList.value.includes('image-1');
+    let pos2 = route_1_slider.classList.value.includes('image-2');
+    let pos3 = route_1_slider.classList.value.includes('image-3');
+    if(pos1) {
+        route_1_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+        route_1_slider.classList.add('image-2');
+        for (let i=0; i<child_route_1_nav.length; i++) {
+            child_route_1_nav[i].classList.remove('active');
+        }
+        route_1_2.classList.add('active');
+        route_1_text.innerHTML =
+            "<p>Experience the thrill of the savannah as you get up close with wild animals, feed them, and even have the chance to touch them. Join us for this unique adventure, surrounded by the beauty of nature and guided by experts.</p>" +
+            "<p>Create unforgettable memories as you interact safely and respectfully with these incredible creatures. Don't miss out on the opportunity to connect with wildlife and appreciate the diversity of our planet.</p>";
+        route_1_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51743.4957772083!2d35.08791381821029!3d-1.252032673449127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182c8cc02316409f%3A0xb3ecf68b5b9329!2sLeopard%20Gorge!5e0!3m2!1ses!2ses!4v1685796237771!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    }
+    else if(pos2) {
+        route_1_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+        route_1_slider.classList.add('image-3');
+        for (let i=0; i<child_route_1_nav.length; i++) {
+            child_route_1_nav[i].classList.remove('active');
+        }
+        route_1_3.classList.add('active');
+        route_1_text.innerHTML =
+            "<p>An exhilarating adventure soaring above the untamed beauty of Masai Mara. Immerse yourself in the awe-inspiring panorama as you glide gracefully through the skies, capturing breathtaking views of the wildlife-rich savannah below.</p>" +
+            "<p>This unforgettable experience offers a unique perspective, allowing you to witness the natural wonders of Africa from a bird's eye view. Drift with the gentle breeze, as the golden sunrise paints the horizon, and spot majestic creatures in their natural habitat.</p>";
+        route_1_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d133556.21730848923!2d35.70717585921946!3d-1.1112130999778937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182c03ff37fcea6b%3A0xd1eea3fe6edc24c!2sMara%20Hot%20Air%20Balloon%20Safari!5e0!3m2!1ses!2ses!4v1685795781956!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    }
+    else if(pos3) {
+        route_1_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+        route_1_slider.classList.add('image-4');
+        for (let i=0; i<child_route_1_nav.length; i++) {
+            child_route_1_nav[i].classList.remove('active');
+        }
+        route_1_4.classList.add('active');
+        route_1_text.innerHTML =
+            "<p>Join our exclusive safari adventure and delight in a captivating dinner amidst the untamed beauty of the savannah. As the African sun sets, relish a sumptuous meal by a crackling bonfire.</p>" +
+            "<p>Immerse yourself in the wild, surrounded by enchanting sights, sounds, and scents. Expert guides will share tales of the African bush, adding depth to your experience. Listen to the symphony of nature as nocturnal creatures awaken.</p>";
+        route_1_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51741.64918651228!2d35.14441857212401!3d-1.3423336178489234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182cf754a4af1361%3A0xce597fba10053ec8!2sMara%20Expedition%20Camp!5e0!3m2!1ses!2ses!4v1685796179566!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    }
+});
+
+/********************************** ROUTE 2 **********************************/
+
+const route_2_slider        = document.getElementById('route-2-slider');
+const route_2_chevron_left  = document.getElementById('route-2-chevron-left');
+const route_2_chevron_right = document.getElementById('route-2-chevron-right');
+const child_route_2_nav     = document.getElementById('route-2-nav').children;
+const route_2_1             = document.getElementById('route-2-1');
+const route_2_2             = document.getElementById('route-2-2');
+const route_2_3             = document.getElementById('route-2-3');
+const route_2_4             = document.getElementById('route-2-4');
+const route_2_text          = document.getElementById('route-2-text');
+const route_2_map           = document.getElementById('route-2-map');
+
+route_2_1.addEventListener("click", function(){
+    route_2_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+    route_2_slider.classList.add('image-1');
+    for (let i=0; i<child_route_2_nav.length; i++) {
+        child_route_2_nav[i].classList.remove('active');
+    }
+    route_2_1.classList.add('active');
+    route_2_text.innerHTML =
+        "<p>In Africa, the Big Five game animals are the lion, leopard, black rhinoceros, African bush elephant, and African buffalo. They are examples of charismatic megafauna, featuring prominently in popular culture, and are among the most famous of Africa's large animals.</p>" +
+        "<p>The term was coined by big-game hunters, and refers to the five most difficult animals in Africa to hunt on foot but is now more widely used by game viewing tourists and safari tour operators.</p>";
+    route_2_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6067.964936228584!2d35.20863659363253!3d-1.4408196537345106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182cffc9ff92412d%3A0xdbe1f1cbad099a86!2sMara%20Big%20Five%20Camp!5e0!3m2!1ses!2ses!4v1685704700655!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+});
+route_2_2.addEventListener("click", function(){
+    route_2_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+    route_2_slider.classList.add('image-2');
+    for (let i=0; i<child_route_2_nav.length; i++) {
+        child_route_2_nav[i].classList.remove('active');
+    }
+    route_2_2.classList.add('active');
+    route_2_text.innerHTML =
+        "<p>Witness millions of wildebeest, zebras, and gazelles embarking on an epic journey from Serengeti to Masai Mara. Guided by experts, observe the breathtaking parade of animals in search of greener pastures and fresh water. They brave treacherous river crossings, evading predators along the way.</p>" +
+        "<p>This immersive adventure connects you with nature and emphasizes the importance of conservation. Immerse yourself in the majesty of wildlife and witness the delicate balance and resilience of African nature.</p>";
+    route_2_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21365.669674069006!2d35.12176176464644!3d-1.484114037953144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182ce8a64a31fdb1%3A0x296a9587e0c3c410!2sMas%C3%A1i%20Mara!5e0!3m2!1ses!2ses!4v1685802320241!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+});
+route_2_3.addEventListener("click", function(){
+    route_2_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+    route_2_slider.classList.add('image-3');
+    for (let i=0; i<child_route_2_nav.length; i++) {
+        child_route_2_nav[i].classList.remove('active');
+    }
+    route_2_3.classList.add('active');
+    route_2_text.innerHTML =
+        "<p>The Musiara Sector in Masai Mara, Kenya, is a renowned area within the game reserve known for exceptional wildlife viewing and stunning natural beauty. Located in the southwestern part of Masai Mara, it offers prime opportunities to witness the Great Migration.</p>" +
+        "<p>Beyond the migration, the sector boasts abundant wildlife year-round, including lions, leopards, elephants, and more. The picturesque landscape, with open plains and meandering rivers, creates a photographer's paradise.</p>";
+    route_2_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d45543.338921600756!2d35.06075297070285!3d-1.5377392922229873!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182d038cb44d326f%3A0x6c76a01e328485d6!2sSafari%20picnic%20tree!5e0!3m2!1ses!2ses!4v1685802958992!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+});
+route_2_4.addEventListener("click", function(){
+    route_2_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+    route_2_slider.classList.add('image-4');
+    for (let i=0; i<child_route_2_nav.length; i++) {
+        child_route_2_nav[i].classList.remove('active');
+    }
+    route_2_4.classList.add('active');
+    route_2_text.innerHTML =
+        "<p>Join our exclusive safari adventure and delight in a captivating dinner amidst the untamed beauty of the savannah. As the African sun sets, relish a sumptuous meal by a crackling bonfire.</p>" +
+        "<p>Immerse yourself in the wild, surrounded by enchanting sights, sounds, and scents. Expert guides will share tales of the African bush, adding depth to your experience. Listen to the symphony of nature as nocturnal creatures awaken.</p>";
+    route_2_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51741.64918651228!2d35.14441857212401!3d-1.3423336178489234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182cf754a4af1361%3A0xce597fba10053ec8!2sMara%20Expedition%20Camp!5e0!3m2!1ses!2ses!4v1685796179566!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+});
+
+route_2_chevron_left.addEventListener("click", function(){
+    let pos2 = route_2_slider.classList.value.includes('image-2');
+    let pos3 = route_2_slider.classList.value.includes('image-3');
+    let pos4 = route_2_slider.classList.value.includes('image-4');
+    if(pos2) {
+        route_2_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+        route_2_slider.classList.add('image-1');
+        for (let i=0; i<child_route_2_nav.length; i++) {
+            child_route_2_nav[i].classList.remove('active');
+        }
+        route_2_1.classList.add('active');
+        route_2_text.innerHTML =
+            "<p>In Africa, the Big Five game animals are the lion, leopard, black rhinoceros, African bush elephant, and African buffalo. They are examples of charismatic megafauna, featuring prominently in popular culture, and are among the most famous of Africa's large animals.</p>" +
+            "<p>The term was coined by big-game hunters, and refers to the five most difficult animals in Africa to hunt on foot but is now more widely used by game viewing tourists and safari tour operators.</p>";
+        route_2_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6067.964936228584!2d35.20863659363253!3d-1.4408196537345106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182cffc9ff92412d%3A0xdbe1f1cbad099a86!2sMara%20Big%20Five%20Camp!5e0!3m2!1ses!2ses!4v1685704700655!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    }
+    else if(pos3) {
+        route_2_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+        route_2_slider.classList.add('image-2');
+        for (let i=0; i<child_route_2_nav.length; i++) {
+            child_route_2_nav[i].classList.remove('active');
+        }
+        route_2_2.classList.add('active');
+        route_2_text.innerHTML =
+            "<p>Witness millions of wildebeest, zebras, and gazelles embarking on an epic journey from Serengeti to Masai Mara. Guided by experts, observe the breathtaking parade of animals in search of greener pastures and fresh water. They brave treacherous river crossings, evading predators along the way.</p>" +
+            "<p>This immersive adventure connects you with nature and emphasizes the importance of conservation. Immerse yourself in the majesty of wildlife and witness the delicate balance and resilience of African nature.</p>";
+        route_2_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21365.669674069006!2d35.12176176464644!3d-1.484114037953144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182ce8a64a31fdb1%3A0x296a9587e0c3c410!2sMas%C3%A1i%20Mara!5e0!3m2!1ses!2ses!4v1685802320241!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    }
+    else if(pos4) {
+        route_2_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+        route_2_slider.classList.add('image-3');
+        for (let i=0; i<child_route_2_nav.length; i++) {
+            child_route_2_nav[i].classList.remove('active');
+        }
+        route_2_3.classList.add('active');
+        route_2_text.innerHTML =
+            "<p>The Musiara Sector in Masai Mara, Kenya, is a renowned area within the game reserve known for exceptional wildlife viewing and stunning natural beauty. Located in the southwestern part of Masai Mara, it offers prime opportunities to witness the Great Migration.</p>" +
+            "<p>Beyond the migration, the sector boasts abundant wildlife year-round, including lions, leopards, elephants, and more. The picturesque landscape, with open plains and meandering rivers, creates a photographer's paradise.</p>";
+        route_2_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d45543.338921600756!2d35.06075297070285!3d-1.5377392922229873!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182d038cb44d326f%3A0x6c76a01e328485d6!2sSafari%20picnic%20tree!5e0!3m2!1ses!2ses!4v1685802958992!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    }
+});
+route_2_chevron_right.addEventListener("click", function(){
+    let pos1 = route_2_slider.classList.value.includes('image-1');
+    let pos2 = route_2_slider.classList.value.includes('image-2');
+    let pos3 = route_2_slider.classList.value.includes('image-3');
+    if(pos1) {
+        route_2_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+        route_2_slider.classList.add('image-2');
+        for (let i=0; i<child_route_2_nav.length; i++) {
+            child_route_2_nav[i].classList.remove('active');
+        }
+        route_2_2.classList.add('active');
+        route_2_text.innerHTML =
+            "<p>Witness millions of wildebeest, zebras, and gazelles embarking on an epic journey from Serengeti to Masai Mara. Guided by experts, observe the breathtaking parade of animals in search of greener pastures and fresh water. They brave treacherous river crossings, evading predators along the way.</p>" +
+            "<p>This immersive adventure connects you with nature and emphasizes the importance of conservation. Immerse yourself in the majesty of wildlife and witness the delicate balance and resilience of African nature.</p>";
+        route_2_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21365.669674069006!2d35.12176176464644!3d-1.484114037953144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182ce8a64a31fdb1%3A0x296a9587e0c3c410!2sMas%C3%A1i%20Mara!5e0!3m2!1ses!2ses!4v1685802320241!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    }
+    else if(pos2) {
+        route_2_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+        route_2_slider.classList.add('image-3');
+        for (let i=0; i<child_route_2_nav.length; i++) {
+            child_route_2_nav[i].classList.remove('active');
+        }
+        route_2_3.classList.add('active');
+        route_2_text.innerHTML =
+            "<p>The Musiara Sector in Masai Mara, Kenya, is a renowned area within the game reserve known for exceptional wildlife viewing and stunning natural beauty. Located in the southwestern part of Masai Mara, it offers prime opportunities to witness the Great Migration.</p>" +
+            "<p>Beyond the migration, the sector boasts abundant wildlife year-round, including lions, leopards, elephants, and more. The picturesque landscape, with open plains and meandering rivers, creates a photographer's paradise.</p>";
+        route_2_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d45543.338921600756!2d35.06075297070285!3d-1.5377392922229873!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182d038cb44d326f%3A0x6c76a01e328485d6!2sSafari%20picnic%20tree!5e0!3m2!1ses!2ses!4v1685802958992!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    }
+    else if(pos3) {
+        route_2_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+        route_2_slider.classList.add('image-4');
+        for (let i=0; i<child_route_2_nav.length; i++) {
+            child_route_2_nav[i].classList.remove('active');
+        }
+        route_2_4.classList.add('active');
+        route_2_text.innerHTML =
+            "<p>Join our exclusive safari adventure and delight in a captivating dinner amidst the untamed beauty of the savannah. As the African sun sets, relish a sumptuous meal by a crackling bonfire.</p>" +
+            "<p>Immerse yourself in the wild, surrounded by enchanting sights, sounds, and scents. Expert guides will share tales of the African bush, adding depth to your experience. Listen to the symphony of nature as nocturnal creatures awaken.</p>";
+        route_2_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51741.64918651228!2d35.14441857212401!3d-1.3423336178489234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182cf754a4af1361%3A0xce597fba10053ec8!2sMara%20Expedition%20Camp!5e0!3m2!1ses!2ses!4v1685796179566!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    }
+});
+
+/********************************** ROUTE 3 **********************************/
+
+const route_3_slider        = document.getElementById('route-3-slider');
+const route_3_chevron_left  = document.getElementById('route-3-chevron-left');
+const route_3_chevron_right = document.getElementById('route-3-chevron-right');
+const child_route_3_nav     = document.getElementById('route-3-nav').children;
+const route_3_1             = document.getElementById('route-3-1');
+const route_3_2             = document.getElementById('route-3-2');
+const route_3_3             = document.getElementById('route-3-3');
+const route_3_4             = document.getElementById('route-3-4');
+const route_3_text          = document.getElementById('route-3-text');
+const route_3_map           = document.getElementById('route-3-map');
+
+route_3_1.addEventListener("click", function(){
+    route_3_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+    route_3_slider.classList.add('image-1');
+    for (let i=0; i<child_route_3_nav.length; i++) {
+        child_route_3_nav[i].classList.remove('active');
+    }
+    route_3_1.classList.add('active');
+    route_3_text.innerHTML =
+        "<p>A game drive is an adventure that entails viewing wildlife in the comfort of a 4×4 open-sided safari vehicle that accommodates 4 to 6 people, a sure way to give you that classical safari feeling. Safari game drives are one of the most popular ways to see wildlife in the Masai Mara.</p>" +
+        "<p>During the game drive, our knowledgeable Maasai guides will introduce you to life in the savanna and share their infinite knowledge about African wildlife.</p>";
+    route_3_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63817.73506114695!2d35.04726534863282!3d-1.4110520000000009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182cfbe851210bb5%3A0x9e14fa9c084c8a4f!2sMara%20Explorer%20Tented%20Camp!5e0!3m2!1ses!2ses!4v1685704792348!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+});
+route_3_2.addEventListener("click", function(){
+    route_3_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+    route_3_slider.classList.add('image-2');
+    for (let i=0; i<child_route_3_nav.length; i++) {
+        child_route_3_nav[i].classList.remove('active');
+    }
+    route_3_2.classList.add('active');
+    route_3_text.innerHTML =
+        "<p>The Maasai warriors are the guardians of an ancient culture that will transport you to a world full of traditions and bravery. Immerse yourself in the experience of their semi-nomadic lifestyle, where you can live in harmony with nature and discover the importance of cattle herding for their sustenance.</p>" +
+        "<p>You will witness their distinctive and colorful attire. Their vibrant red tunics, known as shukas, will envelop your surroundings and allow you to immerse yourself in the visual richness of their culture.</p>";
+    route_3_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105416.80025970498!2d35.29798764018405!3d-1.380204994405213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182c4f957b36cfc3%3A0x23310d5961175e88!2sOl%20Kinyei%20Conservancy!5e0!3m2!1ses!2ses!4v1685820972146!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+});
+route_3_3.addEventListener("click", function(){
+    route_3_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+    route_3_slider.classList.add('image-3');
+    for (let i=0; i<child_route_3_nav.length; i++) {
+        child_route_3_nav[i].classList.remove('active');
+    }
+    route_3_3.classList.add('active');
+    route_3_text.innerHTML =
+        "<p>Prepare to be amazed as you witness lions in their natural habitat, elephants roaming freely, and graceful giraffes grazing amidst breathtaking landscapes.</p>" +
+        "<p>Sekenani offers an incredible diversity of animal encounters. You'll have the opportunity to observe zebras and wildebeests in large herds, marvel at the agility and beauty of leopards, and spot an array of unique bird species. The area is also known for its frequent sightings of cheetahs, known for their incredible speed and agility.</p>";
+    route_3_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62642.87155376363!2d35.22015287335547!3d-1.5309637494117825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182daafe8529d27d%3A0xfa0547ede69c6efc!2sViewpoint!5e0!3m2!1ses!2ses!4v1685821705481!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+});
+route_3_4.addEventListener("click", function(){
+    route_3_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+    route_3_slider.classList.add('image-4');
+    for (let i=0; i<child_route_3_nav.length; i++) {
+        child_route_3_nav[i].classList.remove('active');
+    }
+    route_3_4.classList.add('active');
+    route_3_text.innerHTML =
+        "<p>Join our exclusive safari adventure and delight in a captivating dinner amidst the untamed beauty of the savannah. As the African sun sets, relish a sumptuous meal by a crackling bonfire.</p>" +
+        "<p>Immerse yourself in the wild, surrounded by enchanting sights, sounds, and scents. Expert guides will share tales of the African bush, adding depth to your experience. Listen to the symphony of nature as nocturnal creatures awaken.</p>";
+    route_3_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51741.64918651228!2d35.14441857212401!3d-1.3423336178489234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182cf754a4af1361%3A0xce597fba10053ec8!2sMara%20Expedition%20Camp!5e0!3m2!1ses!2ses!4v1685796179566!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+});
+
+route_3_chevron_left.addEventListener("click", function(){
+    let pos2 = route_3_slider.classList.value.includes('image-2');
+    let pos3 = route_3_slider.classList.value.includes('image-3');
+    let pos4 = route_3_slider.classList.value.includes('image-4');
+    if(pos2) {
+        route_3_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+        route_3_slider.classList.add('image-1');
+        for (let i=0; i<child_route_3_nav.length; i++) {
+            child_route_3_nav[i].classList.remove('active');
+        }
+        route_3_1.classList.add('active');
+        route_3_text.innerHTML =
+            "<p>A game drive is an adventure that entails viewing wildlife in the comfort of a 4×4 open-sided safari vehicle that accommodates 4 to 6 people, a sure way to give you that classical safari feeling. Safari game drives are one of the most popular ways to see wildlife in the Masai Mara.</p>" +
+            "<p>During the game drive, our knowledgeable Maasai guides will introduce you to life in the savanna and share their infinite knowledge about African wildlife.</p>";
+        route_3_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63817.73506114695!2d35.04726534863282!3d-1.4110520000000009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182cfbe851210bb5%3A0x9e14fa9c084c8a4f!2sMara%20Explorer%20Tented%20Camp!5e0!3m2!1ses!2ses!4v1685704792348!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    }
+    else if(pos3) {
+        route_3_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+        route_3_slider.classList.add('image-2');
+        for (let i=0; i<child_route_3_nav.length; i++) {
+            child_route_3_nav[i].classList.remove('active');
+        }
+        route_3_2.classList.add('active');
+        route_3_text.innerHTML =
+            "<p>The Maasai warriors are the guardians of an ancient culture that will transport you to a world full of traditions and bravery. Immerse yourself in the experience of their semi-nomadic lifestyle, where you can live in harmony with nature and discover the importance of cattle herding for their sustenance.</p>" +
+            "<p>You will witness their distinctive and colorful attire. Their vibrant red tunics, known as shukas, will envelop your surroundings and allow you to immerse yourself in the visual richness of their culture.</p>";
+        route_3_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105416.80025970498!2d35.29798764018405!3d-1.380204994405213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182c4f957b36cfc3%3A0x23310d5961175e88!2sOl%20Kinyei%20Conservancy!5e0!3m2!1ses!2ses!4v1685820972146!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    }
+    else if(pos4) {
+        route_3_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+        route_3_slider.classList.add('image-3');
+        for (let i=0; i<child_route_3_nav.length; i++) {
+            child_route_3_nav[i].classList.remove('active');
+        }
+        route_3_3.classList.add('active');
+        route_3_text.innerHTML =
+            "<p>Prepare to be amazed as you witness lions in their natural habitat, elephants roaming freely, and graceful giraffes grazing amidst breathtaking landscapes.</p>" +
+            "<p>Sekenani offers an incredible diversity of animal encounters. You'll have the opportunity to observe zebras and wildebeests in large herds, marvel at the agility and beauty of leopards, and spot an array of unique bird species. The area is also known for its frequent sightings of cheetahs, known for their incredible speed and agility.</p>";
+        route_3_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62642.87155376363!2d35.22015287335547!3d-1.5309637494117825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182daafe8529d27d%3A0xfa0547ede69c6efc!2sViewpoint!5e0!3m2!1ses!2ses!4v1685821705481!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    }
+});
+route_3_chevron_right.addEventListener("click", function(){
+    let pos1 = route_3_slider.classList.value.includes('image-1');
+    let pos2 = route_3_slider.classList.value.includes('image-2');
+    let pos3 = route_3_slider.classList.value.includes('image-3');
+    if(pos1) {
+        route_3_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+        route_3_slider.classList.add('image-2');
+        for (let i=0; i<child_route_3_nav.length; i++) {
+            child_route_3_nav[i].classList.remove('active');
+        }
+        route_3_2.classList.add('active');
+        route_3_text.innerHTML =
+            "<p>The Maasai warriors are the guardians of an ancient culture that will transport you to a world full of traditions and bravery. Immerse yourself in the experience of their semi-nomadic lifestyle, where you can live in harmony with nature and discover the importance of cattle herding for their sustenance.</p>" +
+            "<p>You will witness their distinctive and colorful attire. Their vibrant red tunics, known as shukas, will envelop your surroundings and allow you to immerse yourself in the visual richness of their culture.</p>";
+        route_3_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105416.80025970498!2d35.29798764018405!3d-1.380204994405213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182c4f957b36cfc3%3A0x23310d5961175e88!2sOl%20Kinyei%20Conservancy!5e0!3m2!1ses!2ses!4v1685820972146!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    }
+    else if(pos2) {
+        route_3_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+        route_3_slider.classList.add('image-3');
+        for (let i=0; i<child_route_3_nav.length; i++) {
+            child_route_3_nav[i].classList.remove('active');
+        }
+        route_3_3.classList.add('active');
+        route_3_text.innerHTML =
+            "<p>Prepare to be amazed as you witness lions in their natural habitat, elephants roaming freely, and graceful giraffes grazing amidst breathtaking landscapes.</p>" +
+            "<p>Sekenani offers an incredible diversity of animal encounters. You'll have the opportunity to observe zebras and wildebeests in large herds, marvel at the agility and beauty of leopards, and spot an array of unique bird species. The area is also known for its frequent sightings of cheetahs, known for their incredible speed and agility.</p>";
+        route_3_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62642.87155376363!2d35.22015287335547!3d-1.5309637494117825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182daafe8529d27d%3A0xfa0547ede69c6efc!2sViewpoint!5e0!3m2!1ses!2ses!4v1685821705481!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    }
+    else if(pos3) {
+        route_3_slider.classList.remove('image-1', 'image-2', 'image-3', 'image-4');
+        route_3_slider.classList.add('image-4');
+        for (let i=0; i<child_route_3_nav.length; i++) {
+            child_route_3_nav[i].classList.remove('active');
+        }
+        route_3_4.classList.add('active');
+        route_3_text.innerHTML =
+            "<p>Join our exclusive safari adventure and delight in a captivating dinner amidst the untamed beauty of the savannah. As the African sun sets, relish a sumptuous meal by a crackling bonfire.</p>" +
+            "<p>Immerse yourself in the wild, surrounded by enchanting sights, sounds, and scents. Expert guides will share tales of the African bush, adding depth to your experience. Listen to the symphony of nature as nocturnal creatures awaken.</p>";
+        route_3_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51741.64918651228!2d35.14441857212401!3d-1.3423336178489234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182cf754a4af1361%3A0xce597fba10053ec8!2sMara%20Expedition%20Camp!5e0!3m2!1ses!2ses!4v1685796179566!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    }
+});
