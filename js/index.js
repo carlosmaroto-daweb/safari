@@ -81,6 +81,7 @@ facilities_chevron_left.addEventListener("click", function(){
             child_facilities[i].classList.remove('active');
         }
         facilities_item_2.classList.add('active');
+        facilities_slider_nav.style.scrollBehavior = 'smooth';
         facilities_slider_nav.scrollLeft = -window.innerWidth;
     }
     else if(pos4) {
@@ -145,6 +146,7 @@ facilities_chevron_right.addEventListener("click", function(){
             child_facilities[i].classList.remove('active');
         }
         facilities_item_5.classList.add('active');
+        facilities_slider_nav.style.scrollBehavior = 'smooth';
         facilities_slider_nav.scrollLeft = window.innerWidth;
     }
     else if(pos5) {
@@ -270,6 +272,7 @@ extra_services_chevron_left.addEventListener("click", function(){
             child_extra_services[i].classList.remove('active');
         }
         extra_services_item_2.classList.add('active');
+        extra_services_slider_nav.style.scrollBehavior = 'smooth';
         extra_services_slider_nav.scrollLeft = -window.innerWidth;
     }
     else if(pos4) {
@@ -334,6 +337,7 @@ extra_services_chevron_right.addEventListener("click", function(){
             child_extra_services[i].classList.remove('active');
         }
         extra_services_item_5.classList.add('active');
+        extra_services_slider_nav.style.scrollBehavior = 'smooth';
         extra_services_slider_nav.scrollLeft = window.innerWidth;
     }
     else if(pos5) {
