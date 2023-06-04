@@ -1397,6 +1397,8 @@ body {
 
 .animals .body-text .animal-text p {
     margin-top: 0px;
+    animation-duration: 0.5s;
+    animation-name: animate-fade;
 }
 
 .animals .body-text .animal-text p:last-child {
@@ -1592,11 +1594,15 @@ body {
     font-size: 18.75px;
     color: black;
     text-align: justify;
+    animation-duration: 0.5s;
+    animation-name: animate-fade;
 }
 
 .route-1 .route-info .location {
     height: 50vh;
     width: 50%;
+    animation-duration: 0.5s;
+    animation-name: animate-fade;
 }
 
 /********************************** ROUTE 2 **********************************/
@@ -1769,11 +1775,15 @@ body {
     font-size: 18.75px;
     color: black;
     text-align: justify;
+    animation-duration: 0.5s;
+    animation-name: animate-fade;
 }
 
 .route-2 .route-info .location {
     height: 50vh;
     width: 50%;
+    animation-duration: 0.5s;
+    animation-name: animate-fade;
 }
 
 /********************************** ROUTE 3 **********************************/
@@ -1946,11 +1956,15 @@ body {
     font-size: 18.75px;
     color: black;
     text-align: justify;
+    animation-duration: 0.5s;
+    animation-name: animate-fade;
 }
 
 .route-3 .route-info .location {
     height: 50vh;
     width: 50%;
+    animation-duration: 0.5s;
+    animation-name: animate-fade;
 }
 
 /********************************** VISION **********************************/
@@ -2723,4 +2737,15 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+/**************** ANIMATION ****************/
+
+@keyframes animate-fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
