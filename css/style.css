@@ -1450,6 +1450,7 @@ body {
     align-items: center;
     justify-content: space-between;
     position: relative;
+    transition: all 0.5s;
 }
 
 .route-1 .slider .chevron-left {
@@ -1503,10 +1504,12 @@ body {
     height: 15px;
     border-radius: 7.5px;
     background-color: var(--main-color);
+    transition: all 0.5s;
 }
 
 .route-1 .slider-nav .active .position {
     width: 112.5px;
+    transition: all 0.5s;
 }
 
 .route-1 .slider-nav .item .body-item {
@@ -1624,6 +1627,7 @@ body {
     align-items: center;
     justify-content: space-between;
     position: relative;
+    transition: all 0.5s;
 }
 
 .route-2 .slider .chevron-left {
@@ -1677,10 +1681,12 @@ body {
     height: 15px;
     border-radius: 7.5px;
     background-color: var(--main-color);
+    transition: all 0.5s;
 }
 
 .route-2 .slider-nav .active .position {
     width: 112.5px;
+    transition: all 0.5s;
 }
 
 .route-2 .slider-nav .item .body-item {
@@ -1798,6 +1804,7 @@ body {
     align-items: center;
     justify-content: space-between;
     position: relative;
+    transition: all 0.5s;
 }
 
 .route-3 .slider .chevron-left {
@@ -1851,10 +1858,12 @@ body {
     height: 15px;
     border-radius: 7.5px;
     background-color: var(--main-color);
+    transition: all 0.5s;
 }
 
 .route-3 .slider-nav .active .position {
     width: 112.5px;
+    transition: all 0.5s;
 }
 
 .route-3 .slider-nav .item .body-item {
