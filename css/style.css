@@ -140,6 +140,41 @@ body {
     filter: invert(70%) sepia(50%) saturate(560%) hue-rotate(355deg) brightness(100%) contrast(98%);
 }
 
+.menu-mobile ul {
+    display: none;
+    width: fit-content;
+    position: absolute;
+    right: 0px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: var(--dark-gray-color);
+}
+
+.menu-mobile li a {
+    padding: 15px 30px;
+    display: block;
+    font-family: 'Montserrat Alternates';
+    text-transform: uppercase;
+    font-size: 23.25px;
+    color: white;
+    text-decoration: none;
+    transition: all .3s;
+    border-top: 1px solid black;
+}
+
+.menu-mobile li a:hover {
+    background-color: var(--main-color);
+}
+
+.menu-mobile li .active {
+    color: var(--main-color);
+}
+
+.menu-mobile li .active:hover {
+    color: white;
+}
+
 /********************************** HERO INDEX **********************************/
 
 .hero-index {
