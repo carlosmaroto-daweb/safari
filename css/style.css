@@ -73,6 +73,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all .3s;
 }
 
 .header .logo {
@@ -140,8 +141,12 @@ body {
     filter: invert(70%) sepia(50%) saturate(560%) hue-rotate(355deg) brightness(100%) contrast(98%);
 }
 
-.menu-mobile ul {
+.menu-mobile {
     display: none;
+    transition: all .3s;
+}
+
+.menu-mobile ul {
     width: fit-content;
     position: absolute;
     right: 0px;
@@ -2823,5 +2828,30 @@ body {
     100% {
         opacity: 1;
         transform: translate(0);
+    }
+}
+
+/********************************** MEDIA QUERY **********************************/
+
+@media only screen and (max-width: 960px) {
+
+    .dark-gray-color {
+        background-color: var(--dark-gray-color);
+    }
+
+    .menu-collapse-active {
+        filter: invert(70%) sepia(50%) saturate(560%) hue-rotate(355deg) brightness(100%) contrast(98%) !important;
+    }
+
+    .display-block {
+        display: block;
+    }
+
+    .header .nav {
+        display: none;
+    }
+
+    .header .menu-collapse {
+        display: block;
     }
 }
