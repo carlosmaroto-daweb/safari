@@ -1230,6 +1230,7 @@ body {
     border-bottom: 1px solid rgba(109, 74, 34, 0.5);
     cursor: pointer;
     direction: ltr;
+    transition: all 0.5s;
 }
 
 .animals .nav-list .item * {
@@ -1337,6 +1338,7 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    transition: all 0.5s;
 }
 
 .animals .animal-1 {
