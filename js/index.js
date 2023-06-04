@@ -187,6 +187,7 @@ facilities_slider_nav.addEventListener('mousemove', (event) => {
     const x = event.pageX - facilities_slider_nav.offsetLeft;
     const walk = x - startX;
     facilities_slider_nav.scrollLeft = scrollLeft - walk;
+    facilities_slider_nav.style.scrollBehavior = 'auto';
 });
 
 /********************************** EXTRA SERVICES CAROUSEL **********************************/
@@ -374,4 +375,5 @@ extra_services_slider_nav.addEventListener('mousemove', (event) => {
     const x = event.pageX - extra_services_slider_nav.offsetLeft;
     const walk = x - startX;
     extra_services_slider_nav.scrollLeft = scrollLeft - walk;
+    extra_services_slider_nav.style.scrollBehavior = 'auto';
 });
