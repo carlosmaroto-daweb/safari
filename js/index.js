@@ -377,3 +377,28 @@ extra_services_slider_nav.addEventListener('mousemove', (event) => {
     extra_services_slider_nav.scrollLeft = scrollLeft - walk;
     extra_services_slider_nav.style.scrollBehavior = 'auto';
 });
+
+function isInViewport(elem) {
+    let distance = elem.getBoundingClientRect();
+    return (
+        distance.top < (window.innerHeight || document.documentElement.clientHeight) && distance.bottom > 0
+    );
+}
+
+function manageAnimations() {
+    let elements = document.getElementsByClassName('animate-slide-left');
+    for (let i=0; i<elements.length; i++) {
+        if (isInViewport(elements[i])) {
+            elements[i].classList.replace('animate-slide-left', 'animate-slide-left-viewport');
+        }
+    }
+    elements = document.getElementsByClassName('animate-slide-right');
+    for (let i=0; i<elements.length; i++) {
+        if (isInViewport(elements[i])) {
+            elements[i].classList.replace('animate-slide-right', 'animate-slide-right-viewport');
+        }
+    }
+}
+
+window.addEventListener('load', manageAnimations);
+window.addEventListener('scroll', manageAnimations);

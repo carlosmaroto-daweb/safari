@@ -150,22 +150,19 @@ body {
     background-repeat: no-repeat;
 }
 
-.hero-index .text h1 {
-    margin: 0;
+.hero-index .body-text {
     position: absolute;
     left: 56.25px;
-    bottom: 191.25px;
+    bottom: 86.25px;
+}
+
+.hero-index .text h1 {
+    margin-bottom: 35px;
     font-family: 'Geograph';
     text-transform: uppercase;
     font-size: 57px;
     color: white;
     text-shadow: 1px 1px 1px black;
-}
-
-.hero-index .button {
-    position: absolute;
-    left: 56.25px;
-    bottom: 86.25px;
 }
 
 /********************************** HERO ROUTES **********************************/
@@ -2699,9 +2696,7 @@ body {
     margin-top: 41.25px;
 }
 
-/********************************** ELEMENTS **********************************/
-
-/**************** BUTTON ****************/
+/********************************** BUTTON **********************************/
 
 .button {
     height: 63.75px;
@@ -2739,7 +2734,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/**************** ANIMATION ****************/
+/********************************** ANIMATION **********************************/
 
 @keyframes animate-fade {
     0% {
@@ -2747,5 +2742,51 @@ body {
     }
     100% {
         opacity: 1;
+    }
+}
+
+.animate-slide-left {
+    opacity: 0;
+}
+
+.animate-slide-left-viewport {
+    opacity: 0;
+    animation-delay: 0.3s;
+    animation-duration: 0.5s;
+    animation-name: animate-slide-left;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate-slide-left {
+    0% {
+        opacity: 0;
+        transform: translate(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.animate-slide-right {
+    opacity: 0;
+}
+
+.animate-slide-right-viewport {
+    opacity: 0;
+    animation-delay: 0.3s;
+    animation-duration: 0.5s;
+    animation-name: animate-slide-right;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate-slide-right {
+    0% {
+        opacity: 0;
+        transform: translate(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
     }
 }
