@@ -592,3 +592,22 @@ route_3_chevron_right.addEventListener("click", function(){
         route_3_map.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51741.64918651228!2d35.14441857212401!3d-1.3423336178489234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182cf754a4af1361%3A0xce597fba10053ec8!2sMara%20Expedition%20Camp!5e0!3m2!1ses!2ses!4v1685796179566!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
     }
 });
+
+function isInViewport(elem) {
+    let distance = elem.getBoundingClientRect();
+    return (
+        distance.top < (window.innerHeight || document.documentElement.clientHeight) && distance.bottom > 0
+    );
+}
+
+function manageAnimations() {
+    let elements = document.getElementsByClassName('animate-slide-left');
+    for (let i=0; i<elements.length; i++) {
+        if (isInViewport(elements[i])) {
+            elements[i].classList.replace('animate-slide-left', 'animate-slide-left-viewport');
+        }
+    }
+}
+
+window.addEventListener('load', manageAnimations);
+window.addEventListener('scroll', manageAnimations);
