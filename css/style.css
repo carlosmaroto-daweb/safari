@@ -2840,7 +2840,10 @@ body {
     }
 
     .menu-collapse-active {
+        width: 50px !important;
+        height: 50px !important;
         filter: invert(70%) sepia(50%) saturate(560%) hue-rotate(355deg) brightness(100%) contrast(98%) !important;
+        background-image: url(../img/x-lg.svg) !important;
     }
 
     .display-block {
