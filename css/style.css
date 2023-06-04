@@ -2618,7 +2618,9 @@ body {
 }
 
 .footer .col-1 {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer .logo {
@@ -2741,7 +2743,7 @@ body {
 .button {
     height: 65px;
     background-color: var(--main-color);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     text-shadow: 1px 1px 1px var(--dark-main-color);
     text-decoration: none;
