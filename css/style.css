@@ -2449,7 +2449,7 @@ body {
 
 .contact .item {
     width: 230px;
-    margin: 0px auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -3135,8 +3135,9 @@ body {
         width: 90%;
     }
 
-    .getting-here .text-1 {
-        margin-bottom: 30px;
+    .getting-here .image-1 {
+        height: 50vh;
+        margin: 0px;
     }
 
     .getting-here .image-1, .getting-here .image-2 {
