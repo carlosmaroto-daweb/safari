@@ -2975,6 +2975,7 @@ body {
     }
 
     .history .image-1, .history .image-2, .history .image-3 {
+        margin-top: 20px;
         width: 80%;
     }
 
@@ -3151,11 +3152,11 @@ body {
 
     .getting-here .image-1 {
         height: 50vh;
-        margin: 0px;
     }
 
     .getting-here .image-1, .getting-here .image-2 {
         width: 100%;
+        margin-top: 20px;
     }
 
     .getting-here .image-2 {
