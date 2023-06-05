@@ -2946,13 +2946,10 @@ body {
         text-align: center;
     }
 
-    .footer .col-1, .footer .col-2, .footer .col-3 {
+    .footer .col-1, .footer .col-2, .footer .col-3, .footer .col-4 {
         margin: 30px 0px;
     }
-    
-    .footer .col-4 {
-        margin-bottom: 30px;
-    }
+
 
     .footer ul {
         text-align: justify;
