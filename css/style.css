@@ -128,7 +128,7 @@ body {
     display: none;
     width: 60px;
     height: 50px;
-    filter: invert(100%) sepia(17%) saturate(24%) hue-rotate(357deg) brightness(105%) contrast(106%);
+    filter: invert(100%) sepia(17%) saturate(24%) hue-rotate(357deg) brightness(105%) contrast(106%) drop-shadow(1px 1px 1px black);
     background-image: url(../img/list.svg);
     background-size: cover;
     background-position: center center;
@@ -138,7 +138,7 @@ body {
 }
 
 .header .menu-collapse:hover {
-    filter: invert(70%) sepia(50%) saturate(560%) hue-rotate(355deg) brightness(100%) contrast(98%);
+    filter: invert(70%) sepia(50%) saturate(560%) hue-rotate(355deg) brightness(100%) contrast(98%) drop-shadow(1px 1px 1px black);
 }
 
 .menu-mobile {
@@ -163,6 +163,7 @@ body {
     text-transform: uppercase;
     font-size: 23.25px;
     color: white;
+    text-shadow: 1px 1px 1px black;
     text-decoration: none;
     transition: all .3s;
     border-top: 1px solid black;
@@ -2876,7 +2877,7 @@ body {
     .menu-collapse-active {
         width: 50px !important;
         height: 50px !important;
-        filter: invert(70%) sepia(50%) saturate(560%) hue-rotate(355deg) brightness(100%) contrast(98%) !important;
+        filter: invert(70%) sepia(50%) saturate(560%) hue-rotate(355deg) brightness(100%) contrast(98%) drop-shadow(1px 1px 1px black) !important;
         background-image: url(../img/x-lg.svg) !important;
     }
 
