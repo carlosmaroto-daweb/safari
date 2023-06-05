@@ -1479,7 +1479,7 @@ body {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 60px;
     margin-bottom: 30px;
 }
 
@@ -1564,7 +1564,7 @@ body {
 
 .route-1 .slider-nav .item .body-item {
     width: 100%;
-    min-height: 65%;
+    min-height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1591,7 +1591,7 @@ body {
 }
 
 .route-1 .body-item .subtitle {
-    max-width: 300px;
+    max-width: 350px;
     font-family: 'Montserrat Alternates';
     font-size: 22.5px;
     font-weight: 700;
@@ -1600,7 +1600,7 @@ body {
 }
 
 .route-1 .body-item .description {
-    max-width: 300px;
+    max-width: 350px;
     font-family: 'Poppins';
     font-size: 15px;
     font-weight: 500;
@@ -1661,7 +1661,7 @@ body {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 60px;
     margin-bottom: 30px;
 }
 
@@ -1773,7 +1773,7 @@ body {
 }
 
 .route-2 .body-item .subtitle {
-    max-width: 300px;
+    max-width: 350px;
     font-family: 'Montserrat Alternates';
     font-size: 22.5px;
     font-weight: 700;
@@ -1782,7 +1782,7 @@ body {
 }
 
 .route-2 .body-item .description {
-    max-width: 300px;
+    max-width: 350px;
     font-family: 'Poppins';
     font-size: 15px;
     font-weight: 500;
@@ -1843,7 +1843,7 @@ body {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 60px;
     margin-bottom: 30px;
 }
 
@@ -1955,7 +1955,7 @@ body {
 }
 
 .route-3 .body-item .subtitle {
-    max-width: 300px;
+    max-width: 350px;
     font-family: 'Montserrat Alternates';
     font-size: 22.5px;
     font-weight: 700;
@@ -1964,7 +1964,7 @@ body {
 }
 
 .route-3 .body-item .description {
-    max-width: 300px;
+    max-width: 350px;
     font-family: 'Poppins';
     font-size: 15px;
     font-weight: 500;
@@ -2991,11 +2991,11 @@ body {
     }
 
     .route-1 .slider-nav .item {
-        margin: 10px auto;
+        margin: 20px auto;
     }
 
     .route-1 .slider-nav .item .body-item {
-        margin: 15px auto;
+        margin: 10px auto;
         border: none;
     }
 
@@ -3022,11 +3022,11 @@ body {
     }
 
     .route-2 .slider-nav .item {
-        margin: 10px auto;
+        margin: 20px auto;
     }
 
     .route-2 .slider-nav .item .body-item {
-        margin: 15px auto;
+        margin: 10px auto;
         border: none;
     }
 
@@ -3053,11 +3053,11 @@ body {
     }
 
     .route-3 .slider-nav .item {
-        margin: 10px auto;
+        margin: 20px auto;
     }
 
     .route-3 .slider-nav .item .body-item {
-        margin: 15px auto;
+        margin: 10px auto;
         border: none;
     }
 
