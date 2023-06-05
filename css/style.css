@@ -2025,7 +2025,7 @@ body {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 60px;
     margin-bottom: 30px;
 }
 
@@ -2041,7 +2041,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 50px 0px;
 }
 
 .vision .text {
@@ -2066,27 +2065,27 @@ body {
 .vision .image {
     width: 35%;
     height: 585px;
+    margin-top: 30px;
     background-image: url(../img/conservation-1.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
-/********************************** SERVICES **********************************/
+/********************************** THE LONG RUN **********************************/
 
 .tlr {
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    align-items: center;
 }
 
 .tlr .title {
     padding-bottom: 10px;
     border-bottom: 3px solid var(--main-color);
     width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 
 .tlr .title h2 {
@@ -2098,10 +2097,8 @@ body {
 }
 
 .tlr .text {
-    margin: 0;
+    margin: 0px 30px;
     max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
     font-family: 'Poppins';
     font-size: 18.75px;
     color: black;
@@ -2116,17 +2113,18 @@ body {
 .tlr .row {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    margin: 20px 0px;
+    margin-top: 30px;
 }
 
 .tlr .tarjet {
     display: flex;
     align-items: center;
+    margin: 0px 30px;
 }
 
 .tlr .tarjet p {
     max-width: 355px;
+    margin: 0px 0px;
     margin-left: 30px;
     font-family: 'Poppins';
     font-size: 18.75px;
@@ -2138,7 +2136,7 @@ body {
     width: 150px;
     height: 150px;
     background-image: url(../img/conservation.jpg);
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -2147,7 +2145,7 @@ body {
     width: 150px;
     height: 150px;
     background-image: url(../img/culture.jpg);
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -2156,7 +2154,7 @@ body {
     width: 150px;
     height: 150px;
     background-image: url(../img/community.jpg);
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -2165,7 +2163,7 @@ body {
     width: 150px;
     height: 150px;
     background-image: url(../img/commerce.jpg);
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -3077,6 +3075,17 @@ body {
     
     .route-3 .route-info .location {
         width: auto;
+    }
+
+    /******************* CONSERVATION ******************/
+
+    .tlr .row {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .tlr .tarjet {
+        margin: 30px 30px;
     }
 
     /******************* FOOTER ******************/
