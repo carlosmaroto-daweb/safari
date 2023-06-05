@@ -3165,9 +3165,33 @@ body {
 
     /******************* INDEX ******************/
 
+    .header {
+        padding: 15px 20px;
+    }
+
+    .header .logo h3 {
+        margin-left: 10px;
+    }
+
     .hero-index .body-text {
         left: 30px;
         bottom: 50px;
+    }
+
+    .hero-index {
+        background-position-x: 60%;
+    }
+
+    .hero-routes {
+        background-position-x: 65%;
+    }
+    
+    .link-panels .link-panel-2 {
+        background-position-x: 12%;
+    }
+    
+    .link-panels .link-panel-3 {
+        background-position-x: 90%;
     }
 
     /******************* ROUTES ******************/
