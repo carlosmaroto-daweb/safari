@@ -2942,6 +2942,82 @@ body {
         width: 80%;
     }
 
+    /******************* ROUTES ******************/
+
+    .animals .panel-animals {
+        flex-direction: column;
+    }
+    
+    .animals .nav-list {
+        width: 98%;
+        height: 50vh;
+    }
+
+    .animals .nav-list .item {
+        margin-left: 7.5%;
+    }
+
+    .animals .nav-list .active {
+        margin-left: 2.5%;
+    }
+
+    .animals .nav-list .item h2 {
+        margin-left: 20px;
+    }
+
+    .animals .icon-leopard {
+        margin-right: 35px;
+    }
+
+    .animals .icon-lion {
+        margin-right: 38.5px;
+    }
+
+    .animals .icon-rhino {
+        margin-right: 35px;
+    }
+
+    .animals .icon-elephant {
+        margin-right: 30px;
+    }
+
+    .animals .icon-buffalo {
+        margin-right: 20px;
+    }
+
+    .animals .icon-giraffe {
+        margin-right: 35px;
+    }
+
+    .animals .icon-hippo {
+        margin-right: 35px;
+    }
+
+    .animals .icon-zebra {
+        margin-right: 35px;
+    }
+
+    .animals .icon-gazelle {
+        margin-right: 35px;
+    }
+
+    .animals .info-animal {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .animals .animal-image {
+        width: 100%;
+    }
+
+    .animals .body-text {
+        width: 100%;
+    }
+
+    .animals .body-text .animal-text {
+        height: 85%;
+    }
+
     /******************* FOOTER ******************/
 
     .footer {
