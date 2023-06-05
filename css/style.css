@@ -3193,6 +3193,30 @@ body {
     .link-panels .link-panel-3 {
         background-position-x: 90%;
     }
+    
+    .about-2 .lion {
+        background-position-x: 65%;
+    }
+
+    .about-2 .rhino {
+        background-position-x: 35%;
+    }
+
+    .about-2 .leopard {
+        background-position-x: 30%;
+    }
+
+    .about-2 .elephant {
+        background-position-x: 35%;
+    }
+
+    .about-2 .game-drive {
+        background-position-x: 10%;
+    }
+
+    .facilities .background-facilities {
+        background-position-x: 65%;
+    }
 
     /******************* ROUTES ******************/
 
