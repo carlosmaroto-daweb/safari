@@ -246,6 +246,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .about-1 .title {
@@ -264,7 +265,7 @@ body {
 }
 
 .about-1 p {
-    margin: 30px auto;
+    margin: 30px 30px;
     max-width: 465px;
     font-family: 'Poppins';
     font-size: 18.75px;
@@ -277,12 +278,12 @@ body {
     margin-bottom: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
 }
 
 .about-1 .logo-1 {
     display: flex;
     align-items: center;
+    margin-right: 100px;
 }
 
 .about-1 .logo-1 img {
@@ -2835,8 +2836,19 @@ body {
 
 /********************************** MEDIA QUERY **********************************/
 
+@media only screen and (max-width: 550px) {
+
+    /******************* INDEX ******************/
+
+    .hero-index .body-text {
+        left: 30px;
+        bottom: 50px;
+    }
+}
+
 @media only screen and (max-width: 960px) {
 
+    /******************* HERO COMMON ******************/
     .dark-gray-color {
         background-color: var(--dark-gray-color);
     }
