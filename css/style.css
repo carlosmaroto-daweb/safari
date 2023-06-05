@@ -2136,6 +2136,8 @@ body {
 }
 
 .tlr .conservation {
+    min-width: 75px;
+    min-height: 75px;
     width: 150px;
     height: 150px;
     background-image: url(../img/conservation.jpg);
@@ -2145,6 +2147,8 @@ body {
 }
 
 .tlr .culture {
+    min-width: 75px;
+    min-height: 75px;
     width: 150px;
     height: 150px;
     background-image: url(../img/culture.jpg);
@@ -2154,6 +2158,8 @@ body {
 }
 
 .tlr .community {
+    min-width: 75px;
+    min-height: 75px;
     width: 150px;
     height: 150px;
     background-image: url(../img/community.jpg);
@@ -2163,6 +2169,8 @@ body {
 }
 
 .tlr .commerce {
+    min-width: 75px;
+    min-height: 75px;
     width: 150px;
     height: 150px;
     background-image: url(../img/commerce.jpg);
