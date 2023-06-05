@@ -1534,7 +1534,7 @@ body {
 }
 
 .route-1 .slider-nav {
-    height: 25vh;
+    min-height: 25vh;
     width: 100%;
     display: flex;
     background-color: var(--dark-gray-color);
@@ -1716,7 +1716,7 @@ body {
 }
 
 .route-2 .slider-nav {
-    height: 25vh;
+    min-height: 25vh;
     width: 100%;
     display: flex;
     background-color: var(--dark-gray-color);
@@ -1898,7 +1898,7 @@ body {
 }
 
 .route-3 .slider-nav {
-    height: 25vh;
+    min-height: 25vh;
     width: 100%;
     display: flex;
     background-color: var(--dark-gray-color);
@@ -3034,6 +3034,99 @@ body {
 
     .animals .body-text .animal-text {
         height: 85%;
+    }
+
+    .route-1 .slider-nav {
+        flex-wrap: wrap;
+    }
+
+    .route-1 .slider-nav .item {
+        margin: 10px auto;
+    }
+
+    .route-1 .slider-nav .item .body-item {
+        margin: 15px auto;
+        border: none;
+    }
+
+    .route-1 .route-info {
+        flex-direction: column;
+    }
+    
+    .route-1 .route-info .text {
+        width: auto;
+        height: auto;
+        padding: 0px 30px;
+    }
+    
+    .route-1 .route-info .text p {
+        width: 100%;
+    }
+    
+    .route-1 .route-info .location {
+        width: auto;
+    }
+
+    .route-2 .slider-nav {
+        flex-wrap: wrap;
+    }
+
+    .route-2 .slider-nav .item {
+        margin: 10px auto;
+    }
+
+    .route-2 .slider-nav .item .body-item {
+        margin: 15px auto;
+        border: none;
+    }
+
+    .route-2 .route-info {
+        flex-direction: column;
+    }
+    
+    .route-2 .route-info .text {
+        width: auto;
+        height: auto;
+        padding: 0px 30px;
+    }
+    
+    .route-2 .route-info .text p {
+        width: 100%;
+    }
+    
+    .route-2 .route-info .location {
+        width: auto;
+    }
+
+    .route-3 .slider-nav {
+        flex-wrap: wrap;
+    }
+
+    .route-3 .slider-nav .item {
+        margin: 10px auto;
+    }
+
+    .route-3 .slider-nav .item .body-item {
+        margin: 15px auto;
+        border: none;
+    }
+
+    .route-3 .route-info {
+        flex-direction: column;
+    }
+    
+    .route-3 .route-info .text {
+        width: auto;
+        height: auto;
+        padding: 0px 30px;
+    }
+    
+    .route-3 .route-info .text p {
+        width: 100%;
+    }
+    
+    .route-3 .route-info .location {
+        width: auto;
     }
 
     /******************* FOOTER ******************/
