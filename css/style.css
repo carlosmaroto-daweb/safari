@@ -2495,6 +2495,7 @@ body {
 
 .contact form {
     margin: 30px 30px;
+    width: 90%;
     max-width: 720px;
     display: flex;
     flex-direction: column;
