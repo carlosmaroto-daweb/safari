@@ -3311,3 +3311,66 @@ body {
         text-align: justify;
     }
 }
+
+@media only screen and (max-height: 350px) and (orientation: landscape) {
+    
+    .hero-index .body-text {
+        left: 35px;
+        bottom: 15px;
+    }
+
+    .hero-index .text h1 {
+        display: none;
+    }
+
+    .about-2 .lion {
+        height: 100vh;
+    }
+
+    .about-2 .rhino {
+        height: 50vh;
+    }
+
+    .about-2 .leopard {
+        height: 50vh;
+    }
+
+    .about-2 .buffalo {
+        height: 50vh;
+    }
+
+    .about-2 .elephant {
+        height: 50vh;
+    }
+
+    .about-2 .game-drive {
+        height: 100vh;
+    }
+
+    .link-panels .link-panel-1 {
+        height: 66vh;
+    }
+    
+    .link-panels .link-panel-2 {
+        height: 66vh;
+    }
+    
+    .link-panels .link-panel-3 {
+        height: 66vh;
+    }
+    
+    .link-panels .body-panel-1, .link-panels .body-panel-2, .link-panels .body-panel-3 {
+        height: 66vh;
+    }
+
+    .animals .nav-list {
+        height: 200vh;
+    }
+    .animals .animal-image {
+        height: 100vh;
+    }
+    
+    .animals .body-text {
+        height: 100vh;
+    }
+}
