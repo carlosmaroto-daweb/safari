@@ -1072,10 +1072,8 @@ body {
 /********************************** EXPLORE **********************************/
 
 .explore {
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 }
 
 .explore .title {
@@ -1084,6 +1082,8 @@ body {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 
 .explore .title h2 {
@@ -1094,7 +1094,7 @@ body {
 }
 
 .explore p {
-    margin: 0;
+    margin: 30px 30px;
     max-width: 720px;
     margin-left: auto;
     margin-right: auto;
@@ -1105,11 +1105,16 @@ body {
 }
 
 .explore .tarjets {
+    width: 100%;
+    margin: 30px 0px;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .explore .tarjet {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
     min-width: 335px;
     height: 400px;
     display: flex;
@@ -1218,7 +1223,6 @@ body {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
     margin-bottom: 30px;
 }
 
