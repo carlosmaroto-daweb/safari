@@ -1120,7 +1120,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    min-width: 335px;
+    min-width: 350px;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -2173,18 +2173,17 @@ body {
 /********************************** CONTRIBUTION **********************************/
 
 .contribution {
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    align-items: center;
 }
 
 .contribution .title {
     padding-bottom: 10px;
     border-bottom: 3px solid var(--main-color);
     width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 
 .contribution .title h2 {
@@ -2196,21 +2195,26 @@ body {
 }
 
 .contribution .tarjets {
+    width: 100%;
+    margin-top: 30px;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .contribution .tarjet {
-    width: 325px;
-    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    min-width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .contribution .icon-percentage {
+    margin: 10px 0px;
+    margin-top: 30px;
     display: flex;
     align-items: center;
 }
@@ -2223,7 +2227,7 @@ body {
 }
 
 .contribution .sub-title {
-    margin: 0;
+    margin: 10px 0px;
     font-family: 'Montserrat Alternates';
     font-size: 20.25px;
     color: black;
@@ -2231,8 +2235,9 @@ body {
 }
 
 .contribution .tarjets p {
-    margin: 0px;
-    max-width: 240px;
+    margin: 10px 30px;
+    margin-bottom: 30px;
+    max-width: 300px;
     font-weight: 300;
     font-family: 'Poppins';
     font-size: 18.75px;
@@ -2289,7 +2294,7 @@ body {
 }
 
 .current-scope .background-current-scope {
-    height: 50vh;
+    min-height: 50vh;
     background-image: url(../img/background-current-scope.jpg);
     background-size: cover;
     background-position: center center;
@@ -2301,10 +2306,11 @@ body {
 .current-scope .content {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .current-scope .item {
+    margin: 30px auto;
     width: 240px;
     display: flex;
     flex-direction: column;
@@ -2330,18 +2336,17 @@ body {
 /********************************** PARTNERS **********************************/
 
 .partners {
-    height: 50vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    align-items: center;
 }
 
 .partners .title {
     padding-bottom: 10px;
     border-bottom: 3px solid var(--main-color);
     width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 
 .partners .title h2 {
@@ -2353,8 +2358,13 @@ body {
 }
 
 .partners .list {
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.partners .list * {
+    margin: 30px auto;
 }
 
 .partners .partner-1 {
@@ -3080,6 +3090,19 @@ body {
     }
 
     /******************* CONSERVATION ******************/
+
+    .vision .row {
+        flex-direction: column;
+    }
+
+    .vision .text {
+        max-width: 90%;
+    }
+    
+    .vision .image {
+        width: 100%;
+        background-size: contain;
+    }
 
     .tlr .tarjets {
         width: 100%;
