@@ -1626,10 +1626,11 @@ body {
 
 .route-1 .route-info {
     display: flex;
+    align-items: center;
 }
 
 .route-1 .route-info .text {
-    height: 50vh;
+    min-height: 50vh;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -1808,10 +1809,11 @@ body {
 
 .route-2 .route-info {
     display: flex;
+    align-items: center;
 }
 
 .route-2 .route-info .text {
-    height: 50vh;
+    min-height: 50vh;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -1990,10 +1992,11 @@ body {
 
 .route-3 .route-info {
     display: flex;
+    align-items: center;
 }
 
 .route-3 .route-info .text {
-    height: 50vh;
+    min-height: 50vh;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -3029,6 +3032,7 @@ body {
     }
     
     .route-1 .route-info .text {
+        min-height: none;
         width: auto;
         height: auto;
         padding: 0px 30px;
@@ -3039,7 +3043,7 @@ body {
     }
     
     .route-1 .route-info .location {
-        width: auto;
+        width: 100%;
     }
 
     .route-2 .slider-nav {
@@ -3060,6 +3064,7 @@ body {
     }
     
     .route-2 .route-info .text {
+        min-height: none;
         width: auto;
         height: auto;
         padding: 0px 30px;
@@ -3070,7 +3075,7 @@ body {
     }
     
     .route-2 .route-info .location {
-        width: auto;
+        width: 100%;
     }
 
     .route-3 .slider-nav {
@@ -3091,6 +3096,7 @@ body {
     }
     
     .route-3 .route-info .text {
+        min-height: none;
         width: auto;
         height: auto;
         padding: 0px 30px;
@@ -3101,7 +3107,7 @@ body {
     }
     
     .route-3 .route-info .location {
-        width: auto;
+        width: 100%;
     }
 
     /******************* CONSERVATION ******************/
