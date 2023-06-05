@@ -3158,6 +3158,14 @@ body {
         width: 100%;
     }
 
+    .getting-here .image-2 {
+        order: 2;
+    }
+
+    .getting-here .text-2 {
+        order: 1;
+    }
+
     /******************* FOOTER ******************/
 
     .footer {
