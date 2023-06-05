@@ -2979,39 +2979,30 @@ body {
     }
 
     /******************* ROUTES ******************/
-
-    .animals .panel-animals {
-        flex-direction: column;
-    }
     
     .animals .nav-list {
-        width: 98%;
-        height: 50vh;
+        margin-left: 3%;
     }
 
     .animals .nav-list .item {
-        margin-left: 7.5%;
+        margin-left: 30%;
+        justify-content: center;
     }
 
     .animals .nav-list .active {
-        margin-left: 2.5%;
+        margin-left: 10%;
+    }
+
+    .animals .nav-list .item h2 {
+        display: none;
+    }
+    
+    .animals .icon-leopard, .animals .icon-lion, .animals .icon-rhino, .animals .icon-elephant, .animals .icon-buffalo, .animals .icon-giraffe, .animals .icon-hippo, .animals .icon-zebra, .animals .icon-gazelle {
+        margin: 30px 15px;
     }
 
     .animals .info-animal {
         width: 100%;
-        flex-direction: column;
-    }
-
-    .animals .animal-image {
-        width: 100%;
-    }
-
-    .animals .body-text {
-        width: 100%;
-    }
-
-    .animals .body-text .animal-text {
-        height: 85%;
     }
 
     .route-1 .slider-nav {
@@ -3234,43 +3225,66 @@ body {
 
     /******************* ROUTES ******************/
 
-    .animals .nav-list .item h2 {
-        margin-left: 20px;
+    .animals .nav-list {
+        width: 33%;
+        height: 50vh;
+        position: absolute;
+    }
+
+    .animals .info-animal {
+        width: 100%;
+    }
+
+    .animals .animal-image {
+        margin-left: 33%;
+    }
+
+    .animals .icon-leopard, .animals .icon-lion, .animals .icon-rhino, .animals .icon-elephant, .animals .icon-buffalo, .animals .icon-giraffe, .animals .icon-hippo, .animals .icon-zebra, .animals .icon-gazelle {
+        margin: 15px 0px;
     }
 
     .animals .icon-leopard {
-        margin-right: 35px;
+        width: 30px;
+        height: 35px;
     }
-
+    
     .animals .icon-lion {
-        margin-right: 38.5px;
+        width: 27.5px;
+        height: 42.5px;
     }
-
+    
     .animals .icon-rhino {
-        margin-right: 35px;
+        width: 30px;
+        height: 35px;
     }
-
+    
     .animals .icon-elephant {
-        margin-right: 30px;
+        width: 35px;
+        height: 35px;
     }
-
+    
     .animals .icon-buffalo {
-        margin-right: 20px;
+        width: 45px;
+        height: 30px;
     }
-
+    
     .animals .icon-giraffe {
-        margin-right: 35px;
+        width: 30px;
+        height: 42.5px;
     }
-
+    
     .animals .icon-hippo {
-        margin-right: 35px;
+        width: 30px;
+        height: 35px;
     }
-
+    
     .animals .icon-zebra {
-        margin-right: 35px;
+        width: 30px;
+        height: 42.5px;
     }
-
+    
     .animals .icon-gazelle {
-        margin-right: 35px;
+        width: 30px;
+        height: 42.5px;
     }
 }
