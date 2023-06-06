@@ -59,6 +59,7 @@ html {
     --medium-main-color: #b48132;
     --dark-main-color: #6b4922;
     --dark-gray-color: #333333;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -2659,6 +2660,24 @@ body {
 
 /********************************** FOOTER **********************************/
 
+.scroll-to-top {
+    height: 65px;
+    width: 65px;
+    position: fixed;
+    right: 50px;
+    bottom: 65px;
+    filter: invert(84%) sepia(15%) saturate(2096%) hue-rotate(335deg) brightness(98%) contrast(101%) drop-shadow(1px 1px 1px var(--dark-main-color));
+    text-shadow: 1px 1px 1px var(--dark-main-color);
+    background-image: url(../img/arrow-up-circle-fill.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.scroll-to-top:hover {
+    filter: invert(49%) sepia(96%) saturate(316%) hue-rotate(357deg) brightness(89%) contrast(91%);
+}
+
 .footer {
     padding: 70px 0px;
     background-color: var(--dark-gray-color);
@@ -2880,6 +2899,29 @@ body {
     100% {
         opacity: 1;
         transform: translate(0);
+    }
+}
+
+.animate-slide-top {
+    opacity: 0;
+}
+
+.animate-slide-top-viewport {
+    opacity: 0;
+    animation-delay: 0.3s;
+    animation-duration: 0.5s;
+    animation-name: animate-slide-top;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate-slide-top {
+    0% {
+        opacity: 0;
+        transform: translate(0, -20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
     }
 }
 
