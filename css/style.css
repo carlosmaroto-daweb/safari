@@ -2377,6 +2377,7 @@ body {
 
 .partners .list * {
     margin: 30px auto;
+    margin-bottom: 70px;
 }
 
 .partners .partner-1 {
@@ -2884,7 +2885,7 @@ body {
 
 /********************************** MEDIA QUERY **********************************/
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1200px) {
 
     /******************* HERO COMMON ******************/
     .dark-gray-color {
@@ -3312,7 +3313,7 @@ body {
     }
 }
 
-@media only screen and (max-height: 350px) and (orientation: landscape) {
+@media only screen and (max-height: 575px) and (orientation: landscape) {
     
     .hero-index .body-text {
         left: 35px;
