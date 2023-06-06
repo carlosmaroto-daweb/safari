@@ -2660,24 +2660,6 @@ body {
 
 /********************************** FOOTER **********************************/
 
-.scroll-to-top {
-    height: 65px;
-    width: 65px;
-    position: fixed;
-    right: 50px;
-    bottom: 65px;
-    filter: invert(84%) sepia(15%) saturate(2096%) hue-rotate(335deg) brightness(98%) contrast(101%) drop-shadow(1px 1px 1px var(--dark-main-color));
-    text-shadow: 1px 1px 1px var(--dark-main-color);
-    background-image: url(../img/arrow-up-circle-fill.svg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.scroll-to-top:hover {
-    filter: invert(49%) sepia(96%) saturate(316%) hue-rotate(357deg) brightness(89%) contrast(91%);
-}
-
 .footer {
     padding: 70px 0px;
     background-color: var(--dark-gray-color);
@@ -2843,6 +2825,26 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+/********************************** SCROLL TO TOP **********************************/
+
+.scroll-to-top {
+    height: 65px;
+    width: 65px;
+    position: fixed;
+    right: 50px;
+    bottom: 65px;
+    filter: invert(84%) sepia(15%) saturate(2096%) hue-rotate(335deg) brightness(98%) contrast(101%) drop-shadow(1px 1px 1px var(--dark-main-color));
+    text-shadow: 1px 1px 1px var(--dark-main-color);
+    background-image: url(../img/arrow-up-circle-fill.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.scroll-to-top:hover {
+    filter: invert(49%) sepia(96%) saturate(316%) hue-rotate(357deg) brightness(89%) contrast(91%);
 }
 
 /********************************** ANIMATION **********************************/
@@ -3367,6 +3369,15 @@ body {
     .footer ul {
         text-align: justify;
     }
+    
+    /********************************** SCROLL TO TOP **********************************/
+
+    .scroll-to-top {
+        height: 40px;
+        width: 40px;
+        right: 40px;
+        bottom: 50px;
+    }
 }
 
 @media only screen and (max-height: 575px) and (orientation: landscape) {
@@ -3429,5 +3440,12 @@ body {
     
     .animals .body-text {
         height: 100vh;
+    }
+
+    .scroll-to-top {
+        height: 40px;
+        width: 40px;
+        right: 40px;
+        bottom: 50px;
     }
 }
