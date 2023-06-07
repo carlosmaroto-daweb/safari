@@ -2842,7 +2842,7 @@ body {
 }
 
 .scroll-to-top:hover {
-    filter: invert(49%) sepia(96%) saturate(316%) hue-rotate(357deg) brightness(89%) contrast(91%);
+    filter: invert(49%) sepia(96%) saturate(316%) hue-rotate(357deg) brightness(89%) contrast(91%) drop-shadow(1px 1px 1px var(--dark-main-color));
 }
 
 /********************************** ANIMATION **********************************/
