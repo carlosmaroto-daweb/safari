@@ -461,15 +461,14 @@ body {
 }
 
 .services .tarjets {
-    width: 90%;
     margin: 30px 0px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .services .tarjet {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0px 15px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
@@ -1112,15 +1111,14 @@ body {
 }
 
 .explore .tarjets {
-    width: 80%;
     margin: 30px 0px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .explore .tarjet {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0px 15px;
     margin-bottom: 30px;
     min-width: 350px;
     height: 400px;
@@ -2111,7 +2109,6 @@ body {
 }
 
 .tlr .tarjets {
-    width: 90%;
     display: flex;
     flex-direction: column;
 }
@@ -2119,12 +2116,12 @@ body {
 .tlr .row {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 30px;
 }
 
 .tlr .tarjet {
-    margin: 0px auto;
+    margin: 0px 60px;
     display: flex;
     align-items: center;
 }
@@ -2208,15 +2205,14 @@ body {
 }
 
 .contribution .tarjets {
-    width: 80%;
     margin-top: 30px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .contribution .tarjet {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0px 15px;
     margin-bottom: 30px;
     min-width: 350px;
     display: flex;
@@ -3169,10 +3165,6 @@ body {
         width: 100%;
         background-size: contain;
     }
-
-    .tlr .tarjets {
-        width: 100%;
-    }
     
     .tlr .row {
         flex-direction: column;
@@ -3276,19 +3268,11 @@ body {
         background-position-x: 10%;
     }
     
-    .services .tarjets {
-        width: 100%;
-    }
-
     .facilities .background-facilities {
         background-position-x: 65%;
     }
 
     /******************* ROUTES ******************/
-
-    .explore .tarjets {
-        width: 100%;
-    }
 
     .animals .nav-list {
         width: 33%;
@@ -3351,12 +3335,6 @@ body {
     .animals .icon-gazelle {
         width: 30px;
         height: 42.5px;
-    }
-    
-    /******************* CONSERVATION ******************/
-    
-    .contribution .tarjets {
-        width: 100%;
     }
 
     /******************* FOOTER ******************/
