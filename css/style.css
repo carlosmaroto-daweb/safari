@@ -2788,9 +2788,11 @@ body {
 /********************************** BUTTON **********************************/
 
 .button {
+    width: 300px;
     height: 65px;
     background-color: var(--main-color);
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
     align-items: center;
     text-shadow: 1px 1px 1px var(--dark-main-color);
     text-decoration: none;
