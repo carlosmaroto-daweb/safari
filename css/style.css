@@ -2925,6 +2925,23 @@ body {
     }
 }
 
+.animate-fade-reverse {
+    opacity: 1;
+    animation-delay: 0.3s;
+    animation-duration: 0.5s;
+    animation-name: animate-fade-reverse;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate-fade-reverse {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 /********************************** MEDIA QUERY **********************************/
 
 @media only screen and (max-width: 1200px) {
