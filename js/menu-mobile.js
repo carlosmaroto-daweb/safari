@@ -35,9 +35,10 @@ function isInBottomHalf() {
 function manageAnimations() {
     if (isInBottomHalf()) {
         scroll_to_top.classList.replace('animate-slide-top', 'animate-slide-top-viewport');
+        scroll_to_top.classList.replace('animate-fade-reverse', 'animate-slide-top-viewport');
     }
     else {
-        scroll_to_top.classList.replace('animate-slide-top-viewport', 'animate-slide-top');
+        scroll_to_top.classList.replace('animate-slide-top-viewport', 'animate-fade-reverse');
     }
 }
 
