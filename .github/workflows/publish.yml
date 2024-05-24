@@ -35,4 +35,4 @@ jobs:
       - name: SSH into Server
         run: |
           sshpass -p ${{ secrets.AUTH_PASS }} ssh -o StrictHostKeyChecking=no ${{ secrets.AUTH_SERVER }} << EOF
-            mkdir ejemplo
+            mkdir ejemplo2
