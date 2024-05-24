@@ -31,7 +31,7 @@ jobs:
     steps:
       - name: SSH into Server
         run: |
-          echo "${{ secrets.AUTH_PASS }}" > mi_clave.pem
+          echo ${{ secrets.AUTH_PASS }} > mi_clave.pem
           chmod 600 mi_clave.pem
           ssh -i mi_clave.pem -o StrictHostKeyChecking=no ${{ secrets.AUTH_SERVER }} << EOF
             docker login ghcr.io -u carlosmaroto-daweb -p ${{ secrets.TOKEN_CD }}
