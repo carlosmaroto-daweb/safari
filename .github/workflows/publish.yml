@@ -24,3 +24,15 @@ jobs:
         run: |
           docker build . --tag ghcr.io/carlosmaroto-daweb/safari:latest
           docker push ghcr.io/carlosmaroto-daweb/safari:latest
+  
+  deploy:
+    needs: create-docker-image
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install sshpass
+        run: sudo apt-get install -y sshpass
+      
+      - name: SSH into Server
+        run: |
+          sshpass -p ${{ secrets.AUTH_PASS }} ssh -o StrictHostKeyChecking=no ${{ secrets.AUTH_SERVER }} << EOF
+            mkdir ejemplo
