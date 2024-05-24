@@ -29,10 +29,9 @@ jobs:
     needs: create-docker-image
     runs-on: ubuntu-latest
     steps:
-      - name: Install sshpass
-        run: sudo apt-get install -y sshpass
-      
       - name: SSH into Server
         run: |
-          sshpass -p ${{ secrets.AUTH_PASS }} ssh -o StrictHostKeyChecking=no ${{ secrets.AUTH_SERVER }} << EOF
+          echo "${{ secrets.AUTH_PASS }}" > mi_clave.pem
+          chmod 600 mi_clave.pem
+          ssh -i mi_clave.pem -o StrictHostKeyChecking=no ${{ secrets.AUTH_SERVER }} << EOF
             mkdir ejemplo2
