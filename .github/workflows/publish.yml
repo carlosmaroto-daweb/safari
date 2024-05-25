@@ -36,7 +36,7 @@ jobs:
           ssh -i mi_clave.pem -o StrictHostKeyChecking=no ${{ secrets.AUTH_SERVER }} << EOF
             sudo docker login ghcr.io -u carlosmaroto-daweb -p ${{ secrets.TOKEN_CD }}
             sudo docker pull ghcr.io/carlosmaroto-daweb/safari:latest
-            sudo docker stop web_safari && docker rm web_safari
+            sudo docker stop web_safari && sudo docker rm web_safari
             sudo docker run -d \
               --name web_safari \
               -p 80:80 \
