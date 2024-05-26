@@ -39,7 +39,7 @@ jobs:
             sudo docker stop web_safari && sudo docker rm web_safari
             sudo docker run -d \
               --name web_safari \
-              -p 8000:80 \
+              -p 8000:443 \
               --restart always \
               ghcr.io/carlosmaroto-daweb/safari:latest
           EOF
