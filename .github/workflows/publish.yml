@@ -50,10 +50,10 @@ jobs:
               ghcr.io/carlosmaroto-daweb/$DOCKER_IMAGE
 
             if sudo grep -q "location $NGINX_LOCATION" /etc/nginx/sites-available/default; then
-              if sudo grep -q "proxy_pass http://localhost:$PORT;" /etc/nginx/sites-available/default | grep "$SAFARI_CONTEXT"; then
+              if sudo grep -q "proxy_pass http://localhost:$PORT;" /etc/nginx/sites-available/default | grep "$NGINX_LOCATION"; then
                 echo "Port already configured correctly"
               else
-                sudo sed -i "/location $SAFARI_CONTEXT/,/}/ s|proxy_pass http://localhost:[0-9]*;|proxy_pass http://localhost:$PORT;|g" /etc/nginx/sites-available/default
+                sudo sed -i "/location $NGINX_LOCATION/,/}/ s|proxy_pass http://localhost:[0-9]*;|proxy_pass http://localhost:$PORT;|g" /etc/nginx/sites-available/default
                 echo "Port updated in nginx configuration"
                 sudo systemctl reload nginx
               fi
