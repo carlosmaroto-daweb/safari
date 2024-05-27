@@ -50,10 +50,10 @@ jobs:
               --restart always \
               ghcr.io/carlosmaroto-daweb/$DOCKER_IMAGE
 
-            existing_location=$(grep -E "^\s*location\s+$NGINX_LOCATION\s*{" $NGINX_CONF_FILE)
-
-            if [ -z "$existing_location" ]; then
-              sed -i "\$a\\
+            if grep -q "location $NGINX_LOCATION" $NGINX_CONF_FILE; then
+              echo "La ubicación $NGINX_LOCATION ya existe en el archivo."
+            else
+              sed "\$s/}/
                 location $NGINX_LOCATION {
                   rewrite ^$NGINX_LOCATION(.*)$ /\$1 break;
                   proxy_pass http://localhost:$PORT;
@@ -61,13 +61,9 @@ jobs:
                   proxy_set_header X-Real-IP \$remote_addr;
                   proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
                   proxy_set_header X-Forwarded-Proto \$scheme;
-                }" $NGINX_CONF_FILE
+                }
+              }/" $NGINX_CONF_FILE > $NGINX_CONF_FILE
               sudo systemctl reload nginx
-            else
-              existing_port=$(grep -oP "proxy_pass http://localhost:\K\d+" <<< "$existing_location")
-              if [ "$existing_port" != "$PORT" ]; then
-                sed -i "s/proxy_pass http:\/\/localhost:$existing_port;/proxy_pass http:\/\/localhost:$PORT;/" $NGINX_CONF_FILE
-                sudo systemctl reload nginx
-              fi
             fi
+
           EOF
