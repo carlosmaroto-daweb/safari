@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: ["main"]
 
+env:
+  DOCKER_IMAGE: safari:latest
+  DOCKER_CONTAINER: web_safari
+  PORT: 8000
+
 jobs:
   create-docker-image:
     runs-on: ubuntu-latest
@@ -22,8 +27,8 @@ jobs:
 
       - name: Build image
         run: |
-          docker build . --tag ghcr.io/carlosmaroto-daweb/safari:latest
-          docker push ghcr.io/carlosmaroto-daweb/safari:latest
+          docker build . --tag ghcr.io/carlosmaroto-daweb/$DOCKER_IMAGE
+          docker push ghcr.io/carlosmaroto-daweb/$DOCKER_IMAGE
   
   deploy:
     needs: create-docker-image
@@ -35,11 +40,11 @@ jobs:
           chmod 600 mi_clave.pem
           ssh -i mi_clave.pem -o StrictHostKeyChecking=no ${{ secrets.AUTH_SERVER }} << EOF
             sudo docker login ghcr.io -u carlosmaroto-daweb -p ${{ secrets.TOKEN_CD }}
-            sudo docker pull ghcr.io/carlosmaroto-daweb/safari:latest
-            sudo docker stop web_safari && sudo docker rm web_safari
+            sudo docker pull ghcr.io/carlosmaroto-daweb/$DOCKER_IMAGE
+            sudo docker stop $DOCKER_CONTAINER && sudo docker rm $DOCKER_CONTAINER
             sudo docker run -d \
-              --name web_safari \
-              -p 8000:80 \
+              --name $DOCKER_CONTAINER \
+              -p $PORT:80 \
               --restart always \
-              ghcr.io/carlosmaroto-daweb/safari:latest
+              ghcr.io/carlosmaroto-daweb/$DOCKER_IMAGE
           EOF
