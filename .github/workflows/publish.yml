@@ -11,6 +11,7 @@ env:
   DOCKER_CONTAINER: web_safari
   PORT: 8000
   NGINX_LOCATION: /safari/
+  NGINX_CONF_FILE: /etc/nginx/sites-available/default
 
 jobs:
   create-docker-image:
@@ -49,27 +50,24 @@ jobs:
               --restart always \
               ghcr.io/carlosmaroto-daweb/$DOCKER_IMAGE
 
-            if sudo grep -q "location $NGINX_LOCATION" /etc/nginx/sites-available/default; then
-              if sudo grep -q "proxy_pass http://localhost:$PORT;" /etc/nginx/sites-available/default | grep "$NGINX_LOCATION"; then
-                echo "Port already configured correctly"
-              else
-                sudo sed -i "/location $NGINX_LOCATION/,/}/ s|proxy_pass http://localhost:[0-9]*;|proxy_pass http://localhost:$PORT;|g" /etc/nginx/sites-available/default
-                echo "Port updated in nginx configuration"
-                sudo systemctl reload nginx
-              fi 
-            else
-              echo "Adding location $NGINX_LOCATION to nginx configuration"
-              sudo bash -c 'cat << EOF >> /etc/nginx/sites-available/default
+            existing_location=$(grep -E "^\s*location\s+$NGINX_LOCATION\s*{" $NGINX_CONF_FILE)
 
-              location $NGINX_LOCATION {
-                rewrite ^$NGINX_LOCATION(.*)$ /\$1 break;
-                proxy_pass http://localhost:$PORT;
-                proxy_set_header Host \$host;
-                proxy_set_header X-Real-IP \$remote_addr;
-                proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
-                proxy_set_header X-Forwarded-Proto \$scheme;
-              }
-              EOF'
+            if [ -z "$existing_location" ]; then
+              sed -i "\$a\\
+                location $NGINX_LOCATION {
+                  rewrite ^$NGINX_LOCATION(.*)$ /\$1 break;
+                  proxy_pass http://localhost:$PORT;
+                  proxy_set_header Host \$host;
+                  proxy_set_header X-Real-IP \$remote_addr;
+                  proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
+                  proxy_set_header X-Forwarded-Proto \$scheme;
+                }" $NGINX_CONF_FILE
               sudo systemctl reload nginx
+            else
+              existing_port=$(grep -oP "proxy_pass http://localhost:\K\d+" <<< "$existing_location")
+              if [ "$existing_port" != "$PORT" ]; then
+                sed -i "s/proxy_pass http:\/\/localhost:$existing_port;/proxy_pass http:\/\/localhost:$PORT;/" $NGINX_CONF_FILE
+                sudo systemctl reload nginx
+              fi
             fi
           EOF
