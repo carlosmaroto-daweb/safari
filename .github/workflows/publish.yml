@@ -62,7 +62,7 @@ jobs:
                     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
                     proxy_set_header X-Forwarded-Proto $scheme;
                 }"
-              sed '$s/}/'"$texto_a_insertar"'\n}/' $NGINX_CONF_FILE > tmpfile && mv tmpfile $NGINX_CONF_FILE
+              sed -i "\$s/}/$texto_a_insertar\n}/" $NGINX_CONF_FILE
               sudo systemctl reload nginx
             fi
 
