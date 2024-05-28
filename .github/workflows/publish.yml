@@ -50,5 +50,4 @@ jobs:
               --restart always \
               ghcr.io/carlosmaroto-daweb/$DOCKER_IMAGE
             sudo bash update_nginx_config.sh $NGINX_LOCATION $NGINX_CONF_FILE $PORT
-
           EOF
