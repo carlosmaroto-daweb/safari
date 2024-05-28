@@ -12,10 +12,10 @@ Puedes ver una demostración en vivo de la página web [aquí](https://www.carlo
 - CSS
 - JavaScript
 - 100% Responsive
-- Docker
-- Nginx
-- CI/CD con GitHub Actions
-- EC2 de AWS
+- Docker para contenerización
+- Servidor web Nginx
+- Implementación continua y entrega continua (CI/CD) con GitHub Actions
+- Uso de EC2 de AWS para alojamiento
 
 ## Descripción
 
