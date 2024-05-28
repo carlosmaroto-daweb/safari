@@ -1,3 +1,7 @@
+## Demo
+
+Puedes ver una demostración en vivo de la página web [aquí](https://www.carlosmaroto-daweb.com/safari/).
+
 # Wild Kenya
 
 Este repositorio contiene el código fuente del sitio web Wild Kenya, una experiencia de safari en Kenia.
@@ -34,18 +38,18 @@ Con una relación con Jake Grieves Cook, anteriormente presidente de la Federaci
 
 ## Estructura de Archivos
 
-.github/workflows
-css/style.css
-fonts/Geograph/
-fonts/MontserratAlternates/
-fonts/Poppins/
-img/
-js/
-Dockerfile
-conservation.html
-contact.html
-index.html
-routes.html
+- **index.html**: El archivo HTML principal que define la estructura y el contenido de la página web.
+- **css/styles.css**: Archivo CSS que contiene estilos personalizados para dar vida al diseño único de la página.
+- **js/script.js**: Archivo JavaScript que proporciona funcionalidades interactivas y dinámicas a la página web.
+- **.github/workflows**: Directorio que contiene los flujos de trabajo de GitHub Actions.
+- **fonts/Geograph/**: Directorio que contiene las fuentes del tipo Geograph.
+fonts/MontserratAlternates/: Directorio que contiene las fuentes del tipo Montserrat Alternates.
+- **fonts/Poppins/**: Directorio que contiene las fuentes del tipo Poppins.
+- **img/**: Directorio que contiene las imágenes utilizadas en la página web.
+- **Dockerfile**: Archivo que define la configuración para la creación de la imagen Docker.
+- **conservation.html**: Archivo HTML que contiene información sobre los proyectos de conservación.
+- **contact.html**: Archivo HTML que contiene información de contacto.
+- **routes.html**: Archivo HTML que muestra las rutas de safari disponibles en Wild Kenya.
 
 ## Autor
 
