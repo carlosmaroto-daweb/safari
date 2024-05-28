@@ -49,21 +49,6 @@ jobs:
               -p $PORT:80 \
               --restart always \
               ghcr.io/carlosmaroto-daweb/$DOCKER_IMAGE
-
-            if grep -q "location $NGINX_LOCATION" $NGINX_CONF_FILE; then
-              echo "La ubicación $NGINX_LOCATION ya existe en el archivo."
-            else
-              sudo head -n -1 $NGINX_CONF_FILE > tmpfile && echo "
-              location $NGINX_LOCATION {
-                rewrite ^$NGINX_LOCATION(.*)$ /$1 break;
-                proxy_pass http://localhost:$PORT;
-                proxy_set_header Host \$host;
-                proxy_set_header X-Real-IP \$remote_addr;
-                proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
-                proxy_set_header X-Forwarded-Proto \$scheme;
-              }
-            }" >> tmpfile && sudo mv tmpfile $NGINX_CONF_FILE
-              sudo systemctl reload nginx
-            fi
+            sudo bash update_nginx_config.sh $NGINX_LOCATION $NGINX_CONF_FILE
 
           EOF
