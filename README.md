@@ -1,10 +1,21 @@
+# Wild Kenya
+
+Este repositorio contiene el código fuente del sitio web Wild Kenya, una experiencia de safari en Kenia.
+
 ## Demo
 
 Puedes ver una demostración en vivo de la página web [aquí](https://www.carlosmaroto-daweb.com/safari/).
 
-# Wild Kenya
+## Tecnologías Utilizadas
 
-Este repositorio contiene el código fuente del sitio web Wild Kenya, una experiencia de safari en Kenia.
+- HTML
+- CSS
+- JavaScript
+- 100% Responsive
+- Docker
+- Nginx
+- CI/CD con GitHub Actions
+- EC2 de AWS
 
 ## Descripción
 
@@ -27,15 +38,6 @@ Wild Kenya es un campamento de safari de lujo con 12 tiendas, ubicado en la rese
 
 Con una relación con Jake Grieves Cook, anteriormente presidente de la Federación de Turismo de Kenia y ahora operando un campamento asociado en la reserva vecina, Richard (nuestro fundador) se dio cuenta de una grave amenaza ambiental para el ecosistema del Maasai Mara.
 
-## Tecnologías Utilizadas
-
-- HTML
-- CSS
-- JavaScript
-- 100% Responsive
-- CI/CD con GitHub Actions
-- Se muestra en un EC2 de AWS
-
 ## Estructura de Archivos
 
 - **index.html**: El archivo HTML principal que define la estructura y el contenido de la página web.
@@ -54,7 +56,3 @@ fonts/MontserratAlternates/: Directorio que contiene las fuentes del tipo Montse
 ## Autor
 
 - Desarrollador: [Carlos Maroto](https://github.com/carlosmaroto-daweb)
-
-## Licencia
-
-Este proyecto está bajo la Licencia [MIT](LICENSE).
