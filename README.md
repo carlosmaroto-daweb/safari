@@ -2,7 +2,7 @@
 
 Este repositorio contiene el código fuente del sitio web Wild Kenya, una experiencia de safari en Kenia.
 
-## Demo
+## Demostración
 
 Puedes ver una demostración en vivo de la página web [aquí](https://www.carlosmaroto-daweb.com/safari/).
 
@@ -13,8 +13,8 @@ Puedes ver una demostración en vivo de la página web [aquí](https://www.carlo
 - JavaScript
 - 100% Responsive
 - Docker para contenerización
-- Servidor web Nginx
 - Implementación continua y entrega continua (CI/CD) con GitHub Actions
+- Proxy inverso Nginx
 - Uso de EC2 de AWS para alojamiento
 
 ## Descripción
@@ -56,3 +56,7 @@ fonts/MontserratAlternates/: Directorio que contiene las fuentes del tipo Montse
 ## Autor
 
 - Desarrollador: [Carlos Maroto](https://github.com/carlosmaroto-daweb)
+
+## Mi web
+
+¿Quieres ver más proyectos? Visita mi página web [aquí](https://www.carlosmaroto-daweb.com).
