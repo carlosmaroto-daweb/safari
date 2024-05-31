@@ -9,7 +9,7 @@ on:
 env:
   DOCKER_IMAGE: safari:latest
   DOCKER_CONTAINER: web_safari
-  PORT: 8000
+  PORT: 8001
   NGINX_LOCATION: /safari/
   NGINX_CONF_FILE: /etc/nginx/sites-available/default
 
