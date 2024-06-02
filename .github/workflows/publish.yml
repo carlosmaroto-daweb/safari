@@ -49,5 +49,6 @@ jobs:
               -p $PORT:80 \
               --restart always \
               ghcr.io/carlosmaroto-daweb/$DOCKER_IMAGE
+            sudo docker stop $DOCKER_CONTAINER
             sudo bash update_nginx_config.sh $NGINX_LOCATION $NGINX_CONF_FILE $PORT
           EOF
