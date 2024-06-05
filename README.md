@@ -1,4 +1,4 @@
-# Wild Kenya 
+# Wild Kenya
 
 Este repositorio contiene el código fuente del sitio web Wild Kenya, una experiencia de safari en Kenia.
 
