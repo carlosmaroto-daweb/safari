@@ -1,10 +1,10 @@
-# Wild Kenya
+# Wild Kenya 
 
 Este repositorio contiene el código fuente del sitio web Wild Kenya, una experiencia de safari en Kenia.
 
 ## Demostración
 
-Puedes ver una demostración en vivo de la página web [aquí](https://www.carlosmaroto-daweb.com/safari/).
+Puedes ver una demostración en vivo de la página web [aquí](https://safari.carlosmaroto-daweb.com).
 
 ## Tecnologías Utilizadas
 
