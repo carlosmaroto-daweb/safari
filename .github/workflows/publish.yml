@@ -37,9 +37,9 @@ jobs:
     steps:
       - name: SSH into Server
         run: |
-          echo "${{ secrets.AUTH_PASS }}" > mi_clave.pem
-          chmod 600 mi_clave.pem
-          ssh -i mi_clave.pem -o StrictHostKeyChecking=no ${{ secrets.AUTH_SERVER }} << EOF
+          echo "${{ secrets.AUTH_PASS }}" > rsa_key
+          chmod 600 rsa_key
+          ssh -i rsa_key -o StrictHostKeyChecking=no ${{ secrets.AUTH_SERVER }} << EOF
             sudo docker login ghcr.io -u carlosmaroto-daweb -p ${{ secrets.TOKEN_CD }}
             sudo docker pull ghcr.io/carlosmaroto-daweb/$DOCKER_IMAGE
             sudo docker stop $DOCKER_CONTAINER && sudo docker rm $DOCKER_CONTAINER
@@ -47,7 +47,6 @@ jobs:
               --name $DOCKER_CONTAINER \
               -p $PORT:80 \
               ghcr.io/carlosmaroto-daweb/$DOCKER_IMAGE
-            sudo docker stop $DOCKER_CONTAINER
             sudo systemctl stop nginx
             if [ ! -f /etc/nginx/sites-available/$SUBDOMAIN ]; then
               sudo touch /etc/nginx/sites-available/$SUBDOMAIN
@@ -55,6 +54,13 @@ jobs:
               sudo certbot certonly --standalone -d $SUBDOMAIN --cert-name $SUBDOMAIN --non-interactive --agree-tos --email carlosmaroto.daweb@gmail.com
             fi
             sudo echo '
+            server {
+              listen 80;
+              server_name $SUBDOMAIN;
+
+              return 301 https://\$host\$request_uri;
+            }
+
             server {
               listen 443 ssl;
               server_name $SUBDOMAIN;
@@ -68,13 +74,6 @@ jobs:
                 proxy_set_header X-Real-IP \$remote_addr;
                 proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
                 proxy_set_header X-Forwarded-Proto \$scheme;
-              }
-
-              error_page 502 @start_containers;
-
-              location @start_containers {
-                proxy_pass http://localhost:8080;
-                proxy_set_header X-Subdomain $host;
               }
             }' > /tmp/nginx_site_config
             sudo mv /tmp/nginx_site_config /etc/nginx/sites-available/$SUBDOMAIN
